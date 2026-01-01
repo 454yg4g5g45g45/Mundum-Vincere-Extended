@@ -40189,24 +40189,6 @@ settlement
 settlement
 {
 	level town
-	region Kandanavolu_R
-
-	year_founded 0
-	population 1200
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
 	region Modogulla_R
 
 	year_founded 0
@@ -42666,11 +42648,6 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
 ;	Modogulla
 character	Taharqa, general, age 20, , x 892, y 128
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Kandanavolu
-character	Taharqa, general, age 20, , x 909, y 130
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
@@ -46584,7 +46561,7 @@ settlement
 	region MaroukaCity_R
 
 	year_founded 0
-	population 450
+	population 430
 	plan_set default_set
 	faction_creator ferghana
 	building
@@ -46596,7 +46573,24 @@ settlement
 		type defenses wooden_pallisade
 	}
 }
+settlement
+{
+	level town
+	region Kandanavolu_R
 
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator india
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
 settlement
 {
 	level town
@@ -46698,7 +46692,6 @@ settlement
 	plan_set default_set
 	faction_creator india
 	garrisoned_army
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
