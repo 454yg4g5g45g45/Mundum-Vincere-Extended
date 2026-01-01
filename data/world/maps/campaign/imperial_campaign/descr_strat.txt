@@ -22454,7 +22454,7 @@ settlement
 	region Peium_R
 
 	year_founded 0
-	population 600
+	population 430
 	plan_set default_set
 	faction_creator galatia
 	building
@@ -41203,7 +41203,7 @@ settlement
 	region Kondapur_R
 
 	year_founded 0
-	population 1200
+	population 1000
 	plan_set default_set
 	faction_creator india
 	building
@@ -41221,7 +41221,7 @@ settlement
 	region Podanapura_R
 
 	year_founded 0
-	population 1200
+	population 600
 	plan_set default_set
 	faction_creator india
 	building
@@ -41239,7 +41239,7 @@ settlement
 	region Tiagoura_R
 
 	year_founded 0
-	population 1200
+	population 900
 	plan_set default_set
 	faction_creator india
 	building

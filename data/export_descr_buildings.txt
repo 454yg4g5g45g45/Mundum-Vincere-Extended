@@ -1,25 +1,25 @@
-; classification option (inside `building` and before first `levels`)
-; Example:
+classification option (inside `building` and before first `levels`)
+Example:
 ;	 classification core|defence|military|trade|water|culture|religious (deprecated, but recognised:fortification|infrastructure|other)
-; This tells the game which category of the building browser to use.
-; RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
-; If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
-; Automatic classification:
-;   core_building
+This tells the game which category of the building browser to use.
+RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
+If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
+Automatic classification:
+  core_building
 ;	   core
-;   defenses
+  defenses
 ;	   defence
-;   barracks|equestrian|missiles|smith|despotic_law
+  barracks|equestrian|missiles|smith|despotic_law
 ;	   military
-;   market|port_buildings|hinterland_*|caravans
+  market|port_buildings|hinterland_*|caravans
 ;	   trade
-;   health
+  health
 ;	   water
-;   academic|amphitheatres|theatres|taverns
+  academic|amphitheatres|theatres|taverns
 ;	   culture
-;   temple_*|christian_acedemic
+  temple_*|christian_acedemic
 ;	   religious
-; Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
+Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
 
 ;;exclusivity tags, used for the "no_building_tagged" condition
 tags
@@ -31,13 +31,13 @@ tags
 }
 
 ;;alises, give multiple conditions a string (or allow conditions with normally no string to display one)
-; alias roman_marian_reforms_triggered
-; {
-; 	requires factions { roman, } and major_event "marian_reforms"
+alias roman_marian_reforms_triggered
+{
+	requires factions { roman, } and major_event "marian_reforms"
 ;
-; 	display_string roman_marian_reforms ;;gets a string from expanded_bi
-; 	;; if display_string isn't included it will just display the strings for the events normally
-; }
+	display_string roman_marian_reforms ;;gets a string from expanded_bi
+	;if display_string isn't included it will just display the strings for the events normally
+}
 
 alias no_other_temple
 {
@@ -46,12 +46,12 @@ alias no_other_temple
 	display_string SMT_TECH_TREE_THREAD_REQUIRES_TEMPLE_DESTRUCTION
 }
 
-;; JNF 2021-07-14 - move hidden resources to resource_db because it feels more natural to define them there
-;; modders, this is still fine to do if you want to
+;JNF 2021-07-14 - move hidden resources to resource_db because it feels more natural to define them there
+;modders, this is still fine to do if you want to
 ;;hidden_resources sparta rome italy
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; REFORMS ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;REFORMS ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias pre_camillan
@@ -95,7 +95,7 @@ alias antigonid
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; FACTION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;FACTION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias carthage_faction
@@ -284,7 +284,7 @@ alias slave
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;; BUILT BY FACTION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;BUILT BY FACTION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias carthage_faction_built
@@ -453,7 +453,7 @@ alias assyrian_faction_built
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; LOCATIONAL ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;LOCATIONAL ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias location_anatolia_native
@@ -612,7 +612,7 @@ alias not_location_greek
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; CULTURAL ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;CULTURAL ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias culture_area_roman
@@ -811,7 +811,7 @@ alias culture_area_judaean
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;; FACTION & CULTURE AREA ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;FACTION & CULTURE AREA ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_in_native_land
@@ -980,7 +980,7 @@ alias assyrian_in_native_land
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;; Mother Alias ;;;;;;;;;;
+;;;;;;;;;Mother Alias ;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias faction_in_native_area
@@ -994,11 +994,11 @@ alias not_faction_in_native_area
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;; FACTION & CULTURE PRESENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;FACTION & CULTURE PRESENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; THRESHOLD A (x<20) ;;;;;;;
+;;;;;;THRESHOLD A (x<20) ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_and_religion_a
@@ -1167,7 +1167,7 @@ alias assyrian_and_religion_a
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;; THRESHOLD B (20=<x<40) ;;;;;
+;;;;THRESHOLD B (20=<x<40) ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_and_religion_b
@@ -1336,7 +1336,7 @@ alias assyrian_and_religion_b
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;; THRESHOLD C (40=<x<90) ;;;;;
+;;;;THRESHOLD C (40=<x<90) ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_and_religion_c
@@ -1505,7 +1505,7 @@ alias assyrian_and_religion_c
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;; THRESHOLD D (x>=90) ;;;;;;;
+;;;;;THRESHOLD D (x>=90) ;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_and_religion_d
@@ -1674,7 +1674,7 @@ alias assyrian_and_religion_d
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;; Mother Aliases ;;;;;;;;;
+;;;;;;;;Mother Aliases ;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias faction_culture_threshold_a
@@ -1718,11 +1718,11 @@ alias faction_culture_threshold_c+
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; GOVERNMENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GOVERNMENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;; Roman government ;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;Roman government ;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_has_direct
@@ -1796,7 +1796,7 @@ alias roman_faction_has_gov
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;; Greek government ;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;Greek government ;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias greek_phrourion
@@ -1840,7 +1840,7 @@ alias not_greek_has_gov
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;; Generic governments ;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;Generic governments ;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias military_occupation_present
@@ -1909,7 +1909,7 @@ alias no_other_government
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;; HIDDEN RESOURCE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;HIDDEN RESOURCE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias besieged
@@ -1928,7 +1928,7 @@ alias blockaded_or_besieged
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;; NON-HIDDEN RESOURCE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;NON-HIDDEN RESOURCE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias food_resources
@@ -1982,7 +1982,7 @@ alias tradable_resources
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;; BUILDING PRESENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;BUILDING PRESENT ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias capital
@@ -2011,7 +2011,7 @@ alias ludus_magnus_present
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;; BUILDING CONDITION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;BUILDING CONDITION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias military_administration_conditions
@@ -2072,7 +2072,7 @@ alias tributary_state_conditions
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;; UNIT CONDITION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;UNIT CONDITION ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias roman_archer_rights
@@ -2106,7 +2106,7 @@ alias colonists_recruitable
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; EMPIRE SIZE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EMPIRE SIZE ALIASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 alias size1
@@ -2166,7 +2166,7 @@ alias size3+
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; BUILDINGS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;BUILDINGS ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2204,16 +2204,16 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman peasant"  0
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peasant"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peasant alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
 				
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2230,7 +2230,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;building rework;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 5 requires culture_area_roman
 				religious_belief italic 5 requires culture_area_italic
@@ -2272,7 +2272,7 @@ building core_building
 				religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				religious_belief judaean 5 requires culture_area_judaean
 				
-				;;;;;;;;;;;;;;;;;;;;   empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
 				
 				;;;;;;;;;;taxes
 				
@@ -2350,14 +2350,14 @@ building core_building
 				;;;;multi-size
 				population_growth_bonus bonus 2 requires size3+ and not capital
 				
-				;;;;;;;;;;   empire size bonuses/penalties end   ;;;;;;;;;;
+				;;;;;;;;;  empire size bonuses/penalties end   ;;;;;;;;;;
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   capital bonuses   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  capital bonuses   ;;;;;;;;;;;;;;;;;;;;
 				extra_recruitment_points bonus 1 requires capital
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
 				happiness_bonus bonus -10 requires besieged
 				population_growth_bonus bonus 10 requires besieged
 				trade_base_income_bonus bonus -5 requires besieged
@@ -2369,7 +2369,7 @@ building core_building
 				taxable_income_bonus bonus -5 requires blockaded
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   roman government effects   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  roman government effects   ;;;;;;;;;;;;;;;;;;;;
 				;;;;;no government negative effects
 				taxable_income_bonus bonus -100 requires roman_faction and is_player and not roman_has_gov
 				happiness_bonus bonus -5 requires roman_faction and is_player and not roman_has_gov
@@ -2410,16 +2410,16 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman peasant"  0
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peasant"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peasant alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
 				
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2439,7 +2439,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;building rework;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 5 requires culture_area_roman
 				religious_belief italic 5 requires culture_area_italic
@@ -2481,7 +2481,7 @@ building core_building
 				religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				religious_belief judaean 5 requires culture_area_judaean
 				
-				;;;;;;;;;;;;;;;;;;;;   empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
 				
 				;;;;;;;;;;taxes
 				
@@ -2559,18 +2559,18 @@ building core_building
 				;;;;multi-size
 				population_growth_bonus bonus 4 requires size3+ and not capital
 				
-				;;;;;;;;;;   empire size bonuses/penalties end   ;;;;;;;;;;
+				;;;;;;;;;  empire size bonuses/penalties end   ;;;;;;;;;;
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   agent limits   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  agent limits   ;;;;;;;;;;;;;;;;;;;;
 				agent_limit_settlement diplomat 1
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   capital bonuses   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  capital bonuses   ;;;;;;;;;;;;;;;;;;;;
 				extra_recruitment_points bonus 2 requires capital
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
 				happiness_bonus bonus -10 requires besieged
 				population_growth_bonus bonus 10 requires besieged
 				trade_base_income_bonus bonus -5 requires besieged
@@ -2582,7 +2582,7 @@ building core_building
 				taxable_income_bonus bonus -5 requires blockaded
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   roman government effects   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  roman government effects   ;;;;;;;;;;;;;;;;;;;;
 				;;;;;no government negative effects
 				taxable_income_bonus bonus -100 requires roman_faction and is_player and not roman_has_gov
 				happiness_bonus bonus -5 requires roman_faction and is_player and not roman_has_gov
@@ -2623,16 +2623,16 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman peasant"  0
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peasant"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peasant alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
 				
 				
@@ -2640,7 +2640,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;recruitable generals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    recruitable generals    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early gaul"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early german"  0  requires not marian and militia_barracks_present and not academy_present
@@ -2690,7 +2690,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  0  requires marian and militia_barracks_present and not academy_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early gaul"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early german"  1  requires not marian and militia_barracks_present and academy_present
@@ -2757,7 +2757,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;building rework;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 5 requires culture_area_roman
 				religious_belief italic 5 requires culture_area_italic
@@ -2799,7 +2799,7 @@ building core_building
 				religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				religious_belief judaean 5 requires culture_area_judaean
 				
-				;;;;;;;;;;;;;;;;;;;;   empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
 				
 				;;;;;;;;;;taxes
 				
@@ -2879,18 +2879,18 @@ building core_building
 				;;capital
 				population_growth_bonus bonus 2 requires size3+ and capital
 				
-				;;;;;;;;;;   empire size bonuses/penalties end   ;;;;;;;;;;
+				;;;;;;;;;  empire size bonuses/penalties end   ;;;;;;;;;;
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   agent limits   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  agent limits   ;;;;;;;;;;;;;;;;;;;;
 				agent_limit_settlement diplomat 1
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   capital bonuses   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  capital bonuses   ;;;;;;;;;;;;;;;;;;;;
 				extra_recruitment_points bonus 3 requires capital
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
 				happiness_bonus bonus -10 requires besieged
 				population_growth_bonus bonus 10 requires besieged
 				trade_base_income_bonus bonus -5 requires besieged
@@ -2902,7 +2902,7 @@ building core_building
 				taxable_income_bonus bonus -5 requires blockaded
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   roman government effects   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  roman government effects   ;;;;;;;;;;;;;;;;;;;;
 				;;;;;no government negative effects
 				taxable_income_bonus bonus -100 requires roman_faction and is_player and not roman_has_gov
 				happiness_bonus bonus -5 requires roman_faction and is_player and not roman_has_gov
@@ -2943,16 +2943,16 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman peasant"  0
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peasant"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peasant alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
 				
 				
@@ -2960,7 +2960,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;recruitable generals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    recruitable generals    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early gaul"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early german"  0  requires not marian and militia_barracks_present and not academy_present
@@ -3010,7 +3010,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  0  requires marian and militia_barracks_present and not academy_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early gaul"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early german"  1  requires not marian and militia_barracks_present and academy_present
@@ -3060,7 +3060,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  1  requires marian and militia_barracks_present and academy_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 2)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 2)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  2  requires not marian and militia_barracks_present and scriptorium_present
 				recruit "barb chieftain cavalry early gaul"  2  requires not marian and militia_barracks_present and scriptorium_present
 				recruit "barb chieftain cavalry early german"  2  requires not marian and militia_barracks_present and scriptorium_present
@@ -3127,7 +3127,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;building rework;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 5 requires culture_area_roman
 				religious_belief italic 5 requires culture_area_italic
@@ -3169,7 +3169,7 @@ building core_building
 				religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				religious_belief judaean 5 requires culture_area_judaean
 				
-				;;;;;;;;;;;;;;;;;;;;   empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
 				
 				;;;;;;;;;;taxes
 				
@@ -3249,18 +3249,18 @@ building core_building
 				;;capital
 				population_growth_bonus bonus 4 requires size3+ and capital
 				
-				;;;;;;;;;;   empire size bonuses/penalties end   ;;;;;;;;;;
+				;;;;;;;;;  empire size bonuses/penalties end   ;;;;;;;;;;
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   agent limits   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  agent limits   ;;;;;;;;;;;;;;;;;;;;
 				agent_limit_settlement diplomat 1
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   capital bonuses   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  capital bonuses   ;;;;;;;;;;;;;;;;;;;;
 				extra_recruitment_points bonus 4 requires capital
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
 				happiness_bonus bonus -10 requires besieged
 				population_growth_bonus bonus 10 requires besieged
 				trade_base_income_bonus bonus -5 requires besieged
@@ -3272,7 +3272,7 @@ building core_building
 				taxable_income_bonus bonus -5 requires blockaded
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   roman government effects   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  roman government effects   ;;;;;;;;;;;;;;;;;;;;
 				;;;;;no government negative effects
 				taxable_income_bonus bonus -100 requires roman_faction and is_player and not roman_has_gov
 				happiness_bonus bonus -5 requires roman_faction and is_player and not roman_has_gov
@@ -3315,19 +3315,19 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman peasant"  0
 				
 				;;marian
 				recruit "roman praetorian cohort i"  0  requires marian 
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peasant"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peasant alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
 				
 				
@@ -3336,7 +3336,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;recruitable generals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;    recruitable generals    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early gaul"  0  requires not marian and militia_barracks_present and not academy_present
 				recruit "barb chieftain cavalry early german"  0  requires not marian and militia_barracks_present and not academy_present
@@ -3386,7 +3386,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  0  requires marian and militia_barracks_present and not academy_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 1)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early gaul"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "barb chieftain cavalry early german"  1  requires not marian and militia_barracks_present and academy_present
@@ -3436,7 +3436,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  1  requires marian and militia_barracks_present and academy_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 2)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 2)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  2  requires not marian and militia_barracks_present and scriptorium_present
 				recruit "barb chieftain cavalry early gaul"  2  requires not marian and militia_barracks_present and scriptorium_present
 				recruit "barb chieftain cavalry early german"  2  requires not marian and militia_barracks_present and scriptorium_present
@@ -3486,7 +3486,7 @@ building core_building
 				recruit "spartan royal guard cavalry"  2  requires marian and militia_barracks_present and scriptorium_present
 				
 				
-				;;;;;;;;;;;;    recruitable generals (exp upgrade 3)    ;;;;;;;;;;;;
+				;;;;;;;;;;;   recruitable generals (exp upgrade 3)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  3  requires not marian and militia_barracks_present and ludus_magnus_present
 				recruit "barb chieftain cavalry early gaul"  3  requires not marian and militia_barracks_present and ludus_magnus_present
 				recruit "barb chieftain cavalry early german"  3  requires not marian and militia_barracks_present and ludus_magnus_present
@@ -3555,7 +3555,7 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;building rework;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 5 requires culture_area_roman
 				religious_belief italic 5 requires culture_area_italic
@@ -3597,7 +3597,7 @@ building core_building
 				religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				religious_belief judaean 5 requires culture_area_judaean
 				
-				;;;;;;;;;;;;;;;;;;;;   empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  empire size bonuses/penalties   ;;;;;;;;;;;;;;;;;;;;
 				
 				;;;;;;;;;;taxes
 				
@@ -3677,18 +3677,18 @@ building core_building
 				;;capital
 				population_growth_bonus bonus 6 requires size3+ and capital
 				
-				;;;;;;;;;;   empire size bonuses/penalties end   ;;;;;;;;;;
+				;;;;;;;;;  empire size bonuses/penalties end   ;;;;;;;;;;
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   agent limits   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  agent limits   ;;;;;;;;;;;;;;;;;;;;
 				agent_limit_settlement diplomat 1
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   capital bonuses   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  capital bonuses   ;;;;;;;;;;;;;;;;;;;;
 				extra_recruitment_points bonus 5 requires capital
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  siege and blockade penalties   ;;;;;;;;;;;;;;;;;;;;
 				happiness_bonus bonus -10 requires besieged
 				population_growth_bonus bonus 10 requires besieged
 				trade_base_income_bonus bonus -5 requires besieged
@@ -3700,7 +3700,7 @@ building core_building
 				taxable_income_bonus bonus -5 requires blockaded
 				
 				
-				;;;;;;;;;;;;;;;;;;;;   roman government effects   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  roman government effects   ;;;;;;;;;;;;;;;;;;;;
 				;;;;;no government negative effects
 				taxable_income_bonus bonus -100 requires roman_faction and is_player and not roman_has_gov
 				happiness_bonus bonus -5 requires roman_faction and is_player and not roman_has_gov
@@ -4952,19 +4952,19 @@ building barracks
 				recruit "spartan medium aichmetai"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman city militia"  0  requires roman_has_gov or not roman_faction
 				;ai
 				recruit "roman city militia"  0  requires not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian city militia"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek hoplite militia alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek hoplite militia"  0  requires antigonid or not macedon_faction
 				
 				
@@ -5062,8 +5062,8 @@ building barracks
 				recruit "spartan medium aichmetai"  0
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman city militia"  0  requires roman_has_gov or not roman_faction
 				;ai
 				recruit "roman city militia"  0  requires not is_player
@@ -5098,18 +5098,18 @@ building barracks
 				recruit "roman princeps"  0  requires capital and roman_has_rights and polybian
 				recruit "roman triarii"  0  requires capital and roman_has_rights and polybian
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian city militia"  0
 				recruit "carthaginian infantry"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek hoplite militia alex"  0  requires alexander
 				recruit "greek hoplites alex"  0  requires alexander
 				recruit "greek levy pikemen alex"  0  requires alexander
 				recruit "greek hoplite spartan alex"  0  requires hidden_resource sparta
 				recruit "hypaspists"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek hoplite militia"  0  requires antigonid or not macedon_faction
 				recruit "greek levy pikemen"  0  requires antigonid or not macedon_faction
 				recruit "greek hoplite"  0
@@ -5117,8 +5117,8 @@ building barracks
 				recruit "theban sacred band spearmen"  0  requires hidden_resource thebes
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman italian spearmen"  0  requires location_italy_no_etruria and roman_has_foedus and not marian
 				recruit "barb infantry allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "greek hoplite militia allied"  0  requires roman_has_foedus and location_greek_etruria
@@ -5272,8 +5272,8 @@ building barracks
 				recruit "spartan medium aichmetai"  0
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman city militia"  0  requires roman_has_gov or not roman_faction
 				;ai
 				recruit "roman city militia"  0  requires not is_player
@@ -5318,12 +5318,12 @@ building barracks
 				recruit "roman princeps"  1  requires capital and roman_has_rights and polybian
 				recruit "roman triarii"  1  requires capital and roman_has_rights and polybian
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian city militia"  0
 				recruit "carthaginian infantry"  0
 				recruit "carthaginian medium infantry"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek hoplite militia alex"  0  requires alexander
 				recruit "greek hoplites alex"  0  requires alexander
 				recruit "greek levy pikemen alex"  0  requires alexander
@@ -5332,7 +5332,7 @@ building barracks
 				recruit "greek pikemen alex"  0  requires alexander
 				recruit "phalangists"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek hoplite militia"  0  requires antigonid or not macedon_faction
 				recruit "greek levy pikemen"  0  requires antigonid or not macedon_faction
 				recruit "greek hoplite"  0
@@ -5341,12 +5341,12 @@ building barracks
 				recruit "greek pikemen"  0  requires antigonid or not macedon_faction
 				recruit "greek hoplite elite"  0
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "spanish scutarii"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman italian spearmen"  0  requires location_italy_no_etruria and roman_has_foedus and not marian
 				recruit "barb infantry allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "warband sword allied"  0  requires roman_has_foedus and location_barbarian
@@ -5535,8 +5535,8 @@ building barracks
 				recruit "thorax swordsmen hellenic"  0
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman city militia"  0  requires roman_has_gov or not roman_faction
 				;ai
 				recruit "roman city militia"  0  requires not is_player
@@ -5591,13 +5591,13 @@ building barracks
 				recruit "roman princeps"  2  requires capital and roman_has_rights and polybian
 				recruit "roman triarii"  1  requires capital and roman_has_rights and polybian
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian city militia"  0
 				recruit "carthaginian infantry"  1
 				recruit "carthaginian medium infantry"  0
 				recruit "carthaginian heavy infantry"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek hoplite militia alex"  0  requires alexander
 				recruit "greek hoplites alex"  1  requires alexander
 				recruit "greek levy pikemen alex"  0  requires alexander
@@ -5607,7 +5607,7 @@ building barracks
 				recruit "phalangists"  1  requires alexander
 				recruit "greek royal pikemen alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek hoplite militia"  0  requires antigonid or not macedon_faction
 				recruit "greek levy pikemen"  0  requires antigonid or not macedon_faction
 				recruit "greek hoplite"  1
@@ -5618,12 +5618,12 @@ building barracks
 				recruit "greek silver shield pikemen"  0  
 				recruit "greek hoplite spartan"  0  
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "spanish scutarii"  1
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman italian spearmen"  1  requires location_italy_no_etruria and roman_has_foedus and not marian
 				recruit "barb infantry allied"  1  requires roman_has_foedus and location_barbarian
 				recruit "warband sword allied"  0  requires roman_has_foedus and location_barbarian
@@ -5814,8 +5814,8 @@ building barracks
 				recruit "thorax swordsmen hellenic"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman city militia"  0  requires roman_has_gov or not roman_faction
 				;ai
 				recruit "roman city militia"  0  requires not is_player
@@ -5874,13 +5874,13 @@ building barracks
 				recruit "roman princeps"  2  requires capital and roman_has_rights and polybian
 				recruit "roman triarii"  2  requires capital and roman_has_rights and polybian
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian city militia"  0
 				recruit "carthaginian infantry"  1
 				recruit "carthaginian medium infantry"  0
 				recruit "carthaginian heavy infantry"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek hoplite militia alex"  0  requires alexander
 				recruit "greek hoplites alex"  1  requires alexander
 				recruit "greek levy pikemen alex"  0  requires alexander
@@ -5890,7 +5890,7 @@ building barracks
 				recruit "phalangists"  1  requires alexander
 				recruit "greek royal pikemen alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek hoplite militia"  0  requires antigonid or not macedon_faction
 				recruit "greek levy pikemen"  0  requires antigonid or not macedon_faction
 				recruit "greek hoplite"  1
@@ -5902,12 +5902,12 @@ building barracks
 				recruit "greek hoplite spartan"  0  
 				recruit "greek royal hypaspists"  0  
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "spanish scutarii"  2
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				recruit "roman italian spearmen"  2  requires location_italy_no_etruria and roman_has_foedus and not marian
 				recruit "barb infantry allied"  2  requires roman_has_foedus and location_barbarian
 				recruit "warband sword allied"  1  requires roman_has_foedus and location_barbarian
@@ -6020,8 +6020,8 @@ building equestrian
 				recruit "skiritai cavalry"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;non-marian
 				recruit "roman wardogs early"  0  requires roman_has_gov and not marian
 				;ai
@@ -6041,15 +6041,15 @@ building equestrian
 				;ai
 				recruit "roman medium cavalry"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian warhounds"  0
 				recruit "carthaginian cavalry"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek light lancer alex"  0  requires alexander
 				recruit "prodromoi"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek light lancer"  0  requires antigonid or not macedon_faction
 				recruit "greek cavalry"  0  requires antigonid or not macedon_faction
 				
@@ -6173,8 +6173,8 @@ building equestrian
 				recruit "spanish scutarii cavalry"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;non-marian
 				recruit "roman wardogs early"  0  requires roman_has_gov and not marian
 				;ai
@@ -6199,7 +6199,7 @@ building equestrian
 				;ai
 				recruit "roman medium cavalry"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian warhounds"  0
 				recruit "carthaginian cavalry"  0
 				recruit "carthaginian medium cavalry"  0
@@ -6207,20 +6207,20 @@ building equestrian
 				;;resource-dependent
 				recruit "carthaginian elephant forest"  0  requires resource elephants
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek light lancer alex"  0  requires alexander
 				recruit "prodromoi"  0  requires alexander
 				recruit "greek medium cavalry alex"  0  requires alexander
 				recruit "auxiliary thracian cavalry"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "thessalian cavalry"  0  requires hidden_resource thessaly
 				recruit "greek light lancer"  0  requires antigonid or not macedon_faction
 				recruit "greek cavalry"  0  requires antigonid or not macedon_faction
 				recruit "greek medium cavalry"  0  requires antigonid or not macedon_faction
 				recruit "greek elephant small"  0  requires resource elephants
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb cavalry allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "greek cavalry allied"  0  requires roman_has_foedus and location_greek
 				recruit "elite equites"  0  requires roman_has_foedus and location_italy_proper
@@ -6370,8 +6370,8 @@ building equestrian
 				recruit "spanish scutarii cavalry"  1
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;non-marian
 				recruit "roman wardogs early"  0  requires roman_has_gov and not marian
 				recruit "roman pigs early"  0  requires roman_has_gov and not marian
@@ -6407,7 +6407,7 @@ building equestrian
 				;ai
 				recruit "roman elephant african"  0  requires resource elephants and marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian warhounds"  0
 				recruit "carthaginian cavalry"  1
 				recruit "carthaginian medium cavalry"  0
@@ -6416,7 +6416,7 @@ building equestrian
 				recruit "carthaginian elephant forest"  0  requires resource elephants
 				recruit "carthaginian elephant african"  0  requires resource elephants
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek light lancer alex"  0  requires alexander
 				recruit "prodromoi"  0  requires alexander
 				recruit "greek medium cavalry alex"  0  requires alexander
@@ -6424,7 +6424,7 @@ building equestrian
 				recruit "greek heavy cavalry alex"  0  requires alexander
 				recruit "allied cavalry"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "thessalian cavalry"  0  requires hidden_resource thessaly
 				recruit "greek light lancer"  0  requires antigonid or not macedon_faction
 				recruit "greek cavalry"  0  requires antigonid or not macedon_faction
@@ -6434,7 +6434,7 @@ building equestrian
 				recruit "greek elephant african"  0  requires resource elephants
 				recruit "greek incendiary pigs"  0
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb cavalry allied"  1  requires roman_has_foedus and location_barbarian
 				recruit "greek cavalry allied"  0  requires roman_has_foedus and location_greek
 				recruit "elite equites"  0  requires roman_has_foedus and location_italy_proper
@@ -6603,8 +6603,8 @@ building equestrian
 				recruit "thessalian royal cavalry"  0
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;non-marian
 				recruit "roman wardogs early"  0  requires roman_has_gov and not marian
 				recruit "roman pigs early"  0  requires roman_has_gov and not marian
@@ -6642,7 +6642,7 @@ building equestrian
 				;ai
 				recruit "roman elephant african"  0  requires resource elephants and marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian warhounds"  0
 				recruit "carthaginian cavalry"  2
 				recruit "carthaginian medium cavalry"  0
@@ -6653,7 +6653,7 @@ building equestrian
 				recruit "carthaginian elephant african"  0  requires resource elephants
 				recruit "carthaginian elephant african cataphract"  0  requires resource elephants
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek light lancer alex"  0  requires alexander
 				recruit "prodromoi"  0  requires alexander
 				recruit "greek medium cavalry alex"  0  requires alexander
@@ -6663,7 +6663,7 @@ building equestrian
 				recruit "royal squadron"  0  requires alexander
 				recruit "companion cavalry"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "thessalian cavalry"  0  requires hidden_resource thessaly
 				recruit "greek light lancer"  0  requires antigonid or not macedon_faction
 				recruit "greek cavalry"  0  requires antigonid or not macedon_faction
@@ -6675,7 +6675,7 @@ building equestrian
 				recruit "greek royal cavalry"  0  requires antigonid or not macedon_faction
 				recruit "greek elephant cataphract"  0  requires resource elephants
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb cavalry allied"  2  requires roman_has_foedus and location_barbarian
 				recruit "greek cavalry allied"  1  requires roman_has_foedus and location_greek
 				recruit "elite equites"  0  requires roman_has_foedus and location_italy_proper
@@ -6761,8 +6761,8 @@ building missiles
 				recruit "libyan peltast"  0
 				
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;manipular
 				recruit "roman leves"  0  requires roman_has_rights and camillan
 				recruit "roman accensi"  0  requires roman_has_rights and camillan
@@ -6780,20 +6780,20 @@ building missiles
 				;ai
 				recruit "roman light infantry auxillia"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peltast"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peltast alex"  0  requires alexander
 				recruit "javelin skirmishers"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peltast"  0  requires antigonid or not macedon_faction
 				
-				;;;;;;;;;;;;    numidia    ;;;;;;;;;;;;
+				;;;;;;;;;;;   numidia    ;;;;;;;;;;;;
 				recruit "carthaginian archer"  0
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb peltast allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "greek peltast allied"  0  requires roman_has_foedus and location_greek_italy
 				;ai
@@ -6882,8 +6882,8 @@ building missiles
 				recruit "nomad noble archer warband"  0
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;;non-marian
 				recruit "roman ballista early"  0  requires roman_has_gov and not marian
 				;ai
@@ -6914,27 +6914,27 @@ building missiles
 				recruit "roman light infantry auxillia"  0  requires marian and not is_player
 				recruit "roman archer auxillia"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peltast"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peltast alex"  0  requires alexander
 				recruit "javelin skirmishers"  1  requires alexander
 				recruit "greek archer alex"  0  requires alexander
 				recruit "mardian archers"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peltast"  0  requires antigonid or not macedon_faction
 				recruit "greek archer"  0  requires antigonid or not macedon_faction
 				recruit "greek ballista"  0
 				
-				;;;;;;;;;;;;    numidia    ;;;;;;;;;;;;
+				;;;;;;;;;;;   numidia    ;;;;;;;;;;;;
 				recruit "carthaginian archer"  0
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "carthaginian slinger"  0
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb peltast allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "barb archer allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "greek peltast allied"  0  requires roman_has_foedus and location_greek_italy
@@ -7047,8 +7047,8 @@ building missiles
 				
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;;non-marian
 				recruit "roman ballista early"  0  requires roman_has_gov and not marian
 				recruit "roman scorpion early"  0  requires roman_has_gov and not marian
@@ -7087,31 +7087,31 @@ building missiles
 				recruit "roman light infantry auxillia"  0  requires marian and not is_player
 				recruit "roman archer auxillia"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peltast"  1
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peltast alex"  0  requires alexander
 				recruit "javelin skirmishers"  1  requires alexander
 				recruit "greek archer alex"  0  requires alexander
 				recruit "mardian archers"  0  requires alexander
 				recruit "greek heavy peltast alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peltast"  0  requires antigonid or not macedon_faction
 				recruit "greek archer"  0  requires antigonid or not macedon_faction
 				recruit "greek ballista"  0
 				recruit "greek heavy peltast"  0  requires antigonid or not macedon_faction
 				recruit "greek onager"  0
 				
-				;;;;;;;;;;;;    numidia    ;;;;;;;;;;;;
+				;;;;;;;;;;;   numidia    ;;;;;;;;;;;;
 				recruit "carthaginian archer"  0
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "carthaginian slinger"  1
 				recruit "carthaginian onager"  0
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb peltast allied"  1  requires roman_has_foedus and location_barbarian
 				recruit "barb archer allied"  0  requires roman_has_foedus and location_barbarian
 				recruit "greek peltast allied"  1  requires roman_has_foedus and location_greek_italy
@@ -7231,8 +7231,8 @@ building missiles
 				recruit "rhodian slingers"  0  requires location_greece_proper
 
 				
-				;;;;;;;;;;;;;;;;;;;;;;    main units    ;;;;;;;;;;;;;;;;;;;;;;
-				;;;;;;;;;;;;    roman    ;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   main units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;   roman    ;;;;;;;;;;;;
 				;;;;non-marian
 				recruit "roman ballista early"  0  requires roman_has_gov and not marian
 				recruit "roman scorpion early"  0  requires roman_has_gov and not marian
@@ -7279,18 +7279,18 @@ building missiles
 				recruit "roman light infantry auxillia"  0  requires marian and not is_player
 				recruit "roman archer auxillia"  0  requires marian and not is_player
 				
-				;;;;;;;;;;;;    carthage    ;;;;;;;;;;;;
+				;;;;;;;;;;;   carthage    ;;;;;;;;;;;;
 				recruit "carthaginian peltast"  2
 				recruit "carthaginian heavy onager"  0
 				
-				;;;;;;;;;;;;    macedon    ;;;;;;;;;;;;
+				;;;;;;;;;;;   macedon    ;;;;;;;;;;;;
 				recruit "greek peltast alex"  0  requires alexander
 				recruit "javelin skirmishers"  1  requires alexander
 				recruit "greek archer alex"  0  requires alexander
 				recruit "mardian archers"  0  requires alexander
 				recruit "greek heavy peltast alex"  0  requires alexander
 				
-				;;;;;;;;;;;;    greek    ;;;;;;;;;;;;
+				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peltast"  0  requires antigonid or not macedon_faction
 				recruit "greek archer"  0  requires antigonid or not macedon_faction
 				recruit "greek ballista"  0
@@ -7298,14 +7298,14 @@ building missiles
 				recruit "greek onager"  0
 				recruit "greek heavy onager"  0
 				
-				;;;;;;;;;;;;    numidia    ;;;;;;;;;;;;
+				;;;;;;;;;;;   numidia    ;;;;;;;;;;;;
 				recruit "carthaginian archer"  0
 				
-				;;;;;;;;;;;;    shared    ;;;;;;;;;;;;
+				;;;;;;;;;;;   shared    ;;;;;;;;;;;;
 				recruit "carthaginian slinger"  2
 				recruit "carthaginian onager"  0
 				
-				;;;;;;;;;;;;;;;;;;;;;;    regional units    ;;;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;;;   regional units    ;;;;;;;;;;;;;;;;;;;;;;
 				recruit "barb peltast allied"  2  requires roman_has_foedus and location_barbarian
 				recruit "barb archer allied"  1  requires roman_has_foedus and location_barbarian
 				recruit "greek peltast allied"  2  requires roman_has_foedus and location_greek_italy
@@ -8297,7 +8297,7 @@ building academic
 				taxable_income_bonus bonus -56550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
-				;; JNF 2021-11-01 - Add trait and retinue stuff as a dummy string with a positive effect
+				;JNF 2021-11-01 - Add trait and retinue stuff as a dummy string with a positive effect
 				dummy Capability_TraitsAndRetinue bonus 1
 				law_bonus bonus 1 requires factions { carthaginian, eastern, anatolian, arab, caucasian, nubian, numidian, parthia, egyptian, indian, tamil, tibetan, tocharian, greek, thracian, paeonian, roman, etruscan, } and is_toggled "settlement condition"
 				
@@ -8929,7 +8929,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 10
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -8968,7 +8968,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9031,7 +9031,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 16
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9070,7 +9070,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9133,7 +9133,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 12
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9172,7 +9172,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9235,7 +9235,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 14
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9274,7 +9274,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9337,7 +9337,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 26
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9376,7 +9376,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9439,7 +9439,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 42
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9478,7 +9478,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9541,7 +9541,7 @@ building temple_of_religion
 
 				taxable_income_bonus bonus 129
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9580,7 +9580,7 @@ building temple_of_religion
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9616,7 +9616,7 @@ building temple_of_battle
 	icon religion
 	levels temple_of_battle_shrine temple_of_battle_temple temple_of_battle_large_temple temple_of_battle_awesome_temple temple_of_battle_pantheon 
 	{
-		temple_of_battle_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, } ; and no_other_temple 
+		temple_of_battle_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, }
@@ -9632,7 +9632,7 @@ building temple_of_battle
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -9672,7 +9672,7 @@ building temple_of_battle
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -9710,7 +9710,7 @@ building temple_of_battle
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -9750,7 +9750,7 @@ building temple_of_battle
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -9788,7 +9788,7 @@ building temple_of_battle
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -9827,7 +9827,7 @@ building temple_of_battle
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -9866,7 +9866,7 @@ building temple_of_battle
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -9905,7 +9905,7 @@ building temple_of_battle
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -9944,7 +9944,7 @@ building temple_of_battle
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -9983,7 +9983,7 @@ building temple_of_battle
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -10013,7 +10013,7 @@ building temple_of_battleforge
 	icon religion
 	levels temple_of_battleforge_shrine temple_of_battleforge_temple temple_of_battleforge_large_temple temple_of_battleforge_awesome_temple temple_of_battleforge_pantheon
 	{
-		temple_of_battleforge_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, armenia, } ; and no_other_temple 
+		temple_of_battleforge_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, armenia, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, armenia, }
@@ -10030,7 +10030,7 @@ building temple_of_battleforge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -10069,7 +10069,7 @@ building temple_of_battleforge
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -10108,7 +10108,7 @@ building temple_of_battleforge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -10147,7 +10147,7 @@ building temple_of_battleforge
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -10187,7 +10187,7 @@ building temple_of_battleforge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -10226,7 +10226,7 @@ building temple_of_battleforge
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -10267,7 +10267,7 @@ building temple_of_battleforge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -10306,7 +10306,7 @@ building temple_of_battleforge
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -10348,7 +10348,7 @@ building temple_of_battleforge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -10387,7 +10387,7 @@ building temple_of_battleforge
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -10417,7 +10417,7 @@ building temple_of_farming
 	icon religion
 	levels temple_of_farming_shrine temple_of_farming_temple temple_of_farming_large_temple temple_of_farming_awesome_temple temple_of_farming_pantheon 
 	{
-		temple_of_farming_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, } ; and no_other_temple 
+		temple_of_farming_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, }
@@ -10434,7 +10434,7 @@ building temple_of_farming
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -10473,7 +10473,7 @@ building temple_of_farming
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -10510,7 +10510,7 @@ building temple_of_farming
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -10549,7 +10549,7 @@ building temple_of_farming
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -10586,7 +10586,7 @@ building temple_of_farming
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -10625,7 +10625,7 @@ building temple_of_farming
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -10662,7 +10662,7 @@ building temple_of_farming
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -10701,7 +10701,7 @@ building temple_of_farming
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -10740,7 +10740,7 @@ building temple_of_farming
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -10779,7 +10779,7 @@ building temple_of_farming
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -10809,7 +10809,7 @@ building temple_of_fertility
 	icon religion
 	levels temple_of_fertility_shrine temple_of_fertility_temple temple_of_fertility_large_temple temple_of_fertility_awesome_temple temple_of_fertility_pantheon 
 	{
-		temple_of_fertility_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman,  } ; and no_other_temple 
+		temple_of_fertility_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman,  } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman,  }
@@ -10827,7 +10827,7 @@ building temple_of_fertility
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -10866,7 +10866,7 @@ building temple_of_fertility
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -10906,7 +10906,7 @@ building temple_of_fertility
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -10945,7 +10945,7 @@ building temple_of_fertility
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -10985,7 +10985,7 @@ building temple_of_fertility
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -11024,7 +11024,7 @@ building temple_of_fertility
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -11065,7 +11065,7 @@ building temple_of_fertility
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -11104,7 +11104,7 @@ building temple_of_fertility
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -11146,7 +11146,7 @@ building temple_of_fertility
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -11185,7 +11185,7 @@ building temple_of_fertility
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -11216,7 +11216,7 @@ building temple_of_forge
 	icon religion
 	levels temple_of_forge_shrine temple_of_forge_temple temple_of_forge_large_temple temple_of_forge_awesome_temple temple_of_forge_pantheon 
 	{
-		temple_of_forge_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, carthaginian, etruscan, greek, thracian, paeonian, roman, iberia, } ; and no_other_temple 
+		temple_of_forge_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, carthaginian, etruscan, greek, thracian, paeonian, roman, iberia, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, carthaginian, etruscan, greek, thracian, paeonian, roman, iberia, }
@@ -11233,7 +11233,7 @@ building temple_of_forge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -11272,7 +11272,7 @@ building temple_of_forge
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -11310,7 +11310,7 @@ building temple_of_forge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -11349,7 +11349,7 @@ building temple_of_forge
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -11388,7 +11388,7 @@ building temple_of_forge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -11427,7 +11427,7 @@ building temple_of_forge
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -11467,7 +11467,7 @@ building temple_of_forge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -11506,7 +11506,7 @@ building temple_of_forge
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -11547,7 +11547,7 @@ building temple_of_forge
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -11586,7 +11586,7 @@ building temple_of_forge
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -11616,7 +11616,7 @@ building temple_of_fun
 	icon religion
 	levels temple_of_fun_shrine temple_of_fun_temple temple_of_fun_large_temple temple_of_fun_awesome_temple temple_of_fun_pantheon 
 	{
-		temple_of_fun_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } ; and no_other_temple 
+		temple_of_fun_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, }
@@ -11632,7 +11632,7 @@ building temple_of_fun
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -11671,7 +11671,7 @@ building temple_of_fun
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -11707,7 +11707,7 @@ building temple_of_fun
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -11746,7 +11746,7 @@ building temple_of_fun
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -11782,7 +11782,7 @@ building temple_of_fun
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -11821,7 +11821,7 @@ building temple_of_fun
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -11857,7 +11857,7 @@ building temple_of_fun
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -11896,7 +11896,7 @@ building temple_of_fun
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -11934,7 +11934,7 @@ building temple_of_fun
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -11973,7 +11973,7 @@ building temple_of_fun
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -12003,7 +12003,7 @@ building temple_of_governors
 	icon religion
 	levels temple_of_governors_shrine temple_of_governors_temple temple_of_governors_large_temple temple_of_governors_awesome_temple temple_of_governors_pantheon 
 	{
-		temple_of_governors_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, } ; and no_other_temple 
+		temple_of_governors_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, }
@@ -12020,7 +12020,7 @@ building temple_of_governors
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -12059,7 +12059,7 @@ building temple_of_governors
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -12096,7 +12096,7 @@ building temple_of_governors
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -12135,7 +12135,7 @@ building temple_of_governors
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -12172,7 +12172,7 @@ building temple_of_governors
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -12211,7 +12211,7 @@ building temple_of_governors
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -12248,7 +12248,7 @@ building temple_of_governors
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -12287,7 +12287,7 @@ building temple_of_governors
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -12327,7 +12327,7 @@ building temple_of_governors
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -12366,7 +12366,7 @@ building temple_of_governors
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -12396,7 +12396,7 @@ building temple_of_healing
 	icon religion
 	levels temple_of_healing_shrine temple_of_healing_temple temple_of_healing_large_temple temple_of_healing_awesome_temple temple_of_healing_pantheon 
 	{
-		temple_of_healing_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } ; and no_other_temple 
+		temple_of_healing_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, }
@@ -12413,7 +12413,7 @@ building temple_of_healing
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -12452,7 +12452,7 @@ building temple_of_healing
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -12489,7 +12489,7 @@ building temple_of_healing
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -12528,7 +12528,7 @@ building temple_of_healing
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -12567,7 +12567,7 @@ building temple_of_healing
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -12606,7 +12606,7 @@ building temple_of_healing
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -12645,7 +12645,7 @@ building temple_of_healing
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -12684,7 +12684,7 @@ building temple_of_healing
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -12725,7 +12725,7 @@ building temple_of_healing
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -12764,7 +12764,7 @@ building temple_of_healing
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -12794,7 +12794,7 @@ building temple_of_horse
 	icon religion
 	levels temple_of_horse_shrine temple_of_horse_temple temple_of_horse_large_temple temple_of_horse_awesome_temple temple_of_horse_pantheon 
 	{
-		temple_of_horse_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, etruscan, greek, thracian, paeonian, roman, iberia, } ; and no_other_temple 
+		temple_of_horse_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, etruscan, greek, thracian, paeonian, roman, iberia, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, etruscan, greek, thracian, paeonian, roman, iberia, }
@@ -12811,7 +12811,7 @@ building temple_of_horse
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -12850,7 +12850,7 @@ building temple_of_horse
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -12887,7 +12887,7 @@ building temple_of_horse
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -12926,7 +12926,7 @@ building temple_of_horse
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -12966,7 +12966,7 @@ building temple_of_horse
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -13005,7 +13005,7 @@ building temple_of_horse
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -13045,7 +13045,7 @@ building temple_of_horse
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -13084,7 +13084,7 @@ building temple_of_horse
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -13124,7 +13124,7 @@ building temple_of_horse
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -13163,7 +13163,7 @@ building temple_of_horse
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -13193,7 +13193,7 @@ building temple_of_hunting
 	icon religion
 	levels temple_of_hunting_shrine temple_of_hunting_temple temple_of_hunting_large_temple temple_of_hunting_awesome_temple temple_of_hunting_pantheon 
 	{
-		temple_of_hunting_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, } ; and no_other_temple 
+		temple_of_hunting_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, }
@@ -13210,7 +13210,7 @@ building temple_of_hunting
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -13249,7 +13249,7 @@ building temple_of_hunting
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -13286,7 +13286,7 @@ building temple_of_hunting
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -13325,7 +13325,7 @@ building temple_of_hunting
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -13363,7 +13363,7 @@ building temple_of_hunting
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -13402,7 +13402,7 @@ building temple_of_hunting
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -13440,7 +13440,7 @@ building temple_of_hunting
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -13479,7 +13479,7 @@ building temple_of_hunting
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -13519,7 +13519,7 @@ building temple_of_hunting
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -13558,7 +13558,7 @@ building temple_of_hunting
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -13588,7 +13588,7 @@ building temple_of_justice
 	icon religion
 	levels temple_of_justice_shrine temple_of_justice_temple temple_of_justice_large_temple temple_of_justice_awesome_temple temple_of_justice_pantheon 
 	{
-		temple_of_justice_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } ; and no_other_temple 
+		temple_of_justice_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, }
@@ -13605,7 +13605,7 @@ building temple_of_justice
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -13644,7 +13644,7 @@ building temple_of_justice
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -13682,7 +13682,7 @@ building temple_of_justice
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -13721,7 +13721,7 @@ building temple_of_justice
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -13762,7 +13762,7 @@ building temple_of_justice
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -13801,7 +13801,7 @@ building temple_of_justice
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -13844,7 +13844,7 @@ building temple_of_justice
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -13883,7 +13883,7 @@ building temple_of_justice
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -13928,7 +13928,7 @@ building temple_of_justice
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -13967,7 +13967,7 @@ building temple_of_justice
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -13997,7 +13997,7 @@ building temple_of_law
 	icon religion
 	levels temple_of_law_shrine temple_of_law_temple temple_of_law_large_temple temple_of_law_awesome_temple temple_of_law_pantheon 
 	{
-		temple_of_law_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } ; and no_other_temple 
+		temple_of_law_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, egyptian, etruscan, greek, thracian, paeonian, roman, }
@@ -14014,7 +14014,7 @@ building temple_of_law
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -14053,7 +14053,7 @@ building temple_of_law
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -14090,7 +14090,7 @@ building temple_of_law
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -14129,7 +14129,7 @@ building temple_of_law
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -14166,7 +14166,7 @@ building temple_of_law
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -14205,7 +14205,7 @@ building temple_of_law
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -14243,7 +14243,7 @@ building temple_of_law
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -14282,7 +14282,7 @@ building temple_of_law
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -14323,7 +14323,7 @@ building temple_of_law
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -14362,7 +14362,7 @@ building temple_of_law
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -14392,7 +14392,7 @@ building temple_of_leadership
 	icon religion
 	levels temple_of_leadership_shrine temple_of_leadership_temple temple_of_leadership_large_temple temple_of_leadership_awesome_temple temple_of_leadership_pantheon 
 	{
-		temple_of_leadership_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } ; and no_other_temple 
+		temple_of_leadership_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, }
@@ -14409,7 +14409,7 @@ building temple_of_leadership
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -14448,7 +14448,7 @@ building temple_of_leadership
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -14486,7 +14486,7 @@ building temple_of_leadership
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -14525,7 +14525,7 @@ building temple_of_leadership
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -14562,7 +14562,7 @@ building temple_of_leadership
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -14601,7 +14601,7 @@ building temple_of_leadership
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -14640,7 +14640,7 @@ building temple_of_leadership
 				
 				;;;;;building rework;;;;;
 					
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -14679,7 +14679,7 @@ building temple_of_leadership
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -14719,7 +14719,7 @@ building temple_of_leadership
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -14758,7 +14758,7 @@ building temple_of_leadership
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -14788,7 +14788,7 @@ building temple_of_love
 	icon religion
 	levels temple_of_love_shrine temple_of_love_temple temple_of_love_large_temple temple_of_love_awesome_temple temple_of_love_pantheon 
 	{
-		temple_of_love_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, pontus, } ; and no_other_temple 
+		temple_of_love_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, pontus, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, pontus, }
@@ -14805,7 +14805,7 @@ building temple_of_love
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -14844,7 +14844,7 @@ building temple_of_love
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -14882,7 +14882,7 @@ building temple_of_love
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -14921,7 +14921,7 @@ building temple_of_love
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -14961,7 +14961,7 @@ building temple_of_love
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -15000,7 +15000,7 @@ building temple_of_love
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -15040,7 +15040,7 @@ building temple_of_love
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -15079,7 +15079,7 @@ building temple_of_love
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -15122,7 +15122,7 @@ building temple_of_love
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -15161,7 +15161,7 @@ building temple_of_love
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -15191,7 +15191,7 @@ building temple_of_naval
 	icon religion
 	levels temple_of_naval_shrine temple_of_naval_temple temple_of_naval_large_temple temple_of_naval_awesome_temple temple_of_naval_pantheon 
 	{
-		temple_of_naval_shrine requires factions { anatolian, baltic, germanic, illyrian, nomad, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, armenia, } ; and no_other_temple  and building_present_min_level port_buildings port
+		temple_of_naval_shrine requires factions { anatolian, baltic, germanic, illyrian, nomad, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, armenia, } and no_other_temple  and building_present_min_level port_buildings port
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, baltic, germanic, illyrian, nomad, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, armenia, }
@@ -15207,7 +15207,7 @@ building temple_of_naval
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -15246,7 +15246,7 @@ building temple_of_naval
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -15282,7 +15282,7 @@ building temple_of_naval
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -15321,7 +15321,7 @@ building temple_of_naval
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -15357,7 +15357,7 @@ building temple_of_naval
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -15396,7 +15396,7 @@ building temple_of_naval
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -15432,7 +15432,7 @@ building temple_of_naval
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -15471,7 +15471,7 @@ building temple_of_naval
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -15511,7 +15511,7 @@ building temple_of_naval
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -15550,7 +15550,7 @@ building temple_of_naval
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -15580,7 +15580,7 @@ building temple_of_one_god
 	icon religion
 	levels temple_of_one_god_shrine temple_of_one_god_temple temple_of_one_god_large_temple temple_of_one_god_awesome_temple temple_of_one_god_pantheon 
 	{
-		temple_of_one_god_shrine requires factions { anatolian, parthia, persis, } ; and no_other_temple 
+		temple_of_one_god_shrine requires factions { anatolian, parthia, persis, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, parthia, }
@@ -15597,7 +15597,7 @@ building temple_of_one_god
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -15636,7 +15636,7 @@ building temple_of_one_god
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -15673,7 +15673,7 @@ building temple_of_one_god
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -15712,7 +15712,7 @@ building temple_of_one_god
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -15749,7 +15749,7 @@ building temple_of_one_god
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -15788,7 +15788,7 @@ building temple_of_one_god
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -15825,7 +15825,7 @@ building temple_of_one_god
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -15864,7 +15864,7 @@ building temple_of_one_god
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -15901,7 +15901,7 @@ building temple_of_one_god
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -15940,7 +15940,7 @@ building temple_of_one_god
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -15970,7 +15970,7 @@ building temple_of_trade
 	icon religion
 	levels temple_of_trade_shrine temple_of_trade_temple temple_of_trade_large_temple temple_of_trade_awesome_temple temple_of_trade_pantheon 
 	{
-		temple_of_trade_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } ; and no_other_temple 
+		temple_of_trade_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, nuragic, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, }
@@ -15989,7 +15989,7 @@ building temple_of_trade
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -16028,7 +16028,7 @@ building temple_of_trade
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -16067,7 +16067,7 @@ building temple_of_trade
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -16106,7 +16106,7 @@ building temple_of_trade
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -16148,7 +16148,7 @@ building temple_of_trade
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -16187,7 +16187,7 @@ building temple_of_trade
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -16229,7 +16229,7 @@ building temple_of_trade
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -16268,7 +16268,7 @@ building temple_of_trade
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -16312,7 +16312,7 @@ building temple_of_trade
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -16351,7 +16351,7 @@ building temple_of_trade
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -16381,7 +16381,7 @@ building temple_of_victory
 	icon religion
 	levels temple_of_victory_shrine temple_of_victory_temple temple_of_victory_large_temple temple_of_victory_awesome_temple temple_of_victory_pantheon 
 	{
-		temple_of_victory_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } ; and no_other_temple 
+		temple_of_victory_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, colchis, }
@@ -16398,7 +16398,7 @@ building temple_of_victory
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -16437,7 +16437,7 @@ building temple_of_victory
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -16476,7 +16476,7 @@ building temple_of_victory
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -16515,7 +16515,7 @@ building temple_of_victory
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -16555,7 +16555,7 @@ building temple_of_victory
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -16594,7 +16594,7 @@ building temple_of_victory
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -16634,7 +16634,7 @@ building temple_of_victory
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -16673,7 +16673,7 @@ building temple_of_victory
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -16716,7 +16716,7 @@ building temple_of_victory
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -16755,7 +16755,7 @@ building temple_of_victory
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -16785,7 +16785,7 @@ building temple_of_violence
 	icon religion
 	levels temple_of_violence_shrine temple_of_violence_temple temple_of_violence_large_temple temple_of_violence_awesome_temple temple_of_violence_pantheon 
 	{
-		temple_of_violence_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, } ; and no_other_temple 
+		temple_of_violence_shrine requires factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, dacian, germanic, iberian, illyrian, nomad, arab, caucasian, carthaginian, numidian, etruscan, greek, thracian, paeonian, roman, egypt, pontus, }
@@ -16801,7 +16801,7 @@ building temple_of_violence
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -16840,7 +16840,7 @@ building temple_of_violence
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -16877,7 +16877,7 @@ building temple_of_violence
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -16916,7 +16916,7 @@ building temple_of_violence
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -16954,7 +16954,7 @@ building temple_of_violence
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -16993,7 +16993,7 @@ building temple_of_violence
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -17032,7 +17032,7 @@ building temple_of_violence
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -17071,7 +17071,7 @@ building temple_of_violence
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -17113,7 +17113,7 @@ building temple_of_violence
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -17152,7 +17152,7 @@ building temple_of_violence
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
@@ -17182,7 +17182,7 @@ building temple_of_viking
 	icon religion
 	levels temple_of_viking_shrine temple_of_viking_temple temple_of_viking_large_temple 
 	{
-		temple_of_viking_shrine requires factions { anatolian, barbarian, baltic, brittonic, iberian, germanic, } ; and no_other_temple 
+		temple_of_viking_shrine requires factions { anatolian, barbarian, baltic, brittonic, iberian, germanic, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, brittonic, iberian, germanic, }
@@ -17199,7 +17199,7 @@ building temple_of_viking
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -17238,7 +17238,7 @@ building temple_of_viking
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -17276,7 +17276,7 @@ building temple_of_viking
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -17315,7 +17315,7 @@ building temple_of_viking
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -17354,7 +17354,7 @@ building temple_of_viking
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -17393,7 +17393,7 @@ building temple_of_viking
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -17423,7 +17423,7 @@ building temple_of_horse_2
 	icon religion
 	levels temple_of_horse_2_shrine temple_of_horse_2_temple temple_of_horse_2_large_temple 
 	{
-		temple_of_horse_2_shrine requires factions { anatolian, barbarian, baltic, dacian, iberian, nomad, } ; and no_other_temple 
+		temple_of_horse_2_shrine requires factions { anatolian, barbarian, baltic, dacian, iberian, nomad, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { anatolian, barbarian, baltic, dacian, iberian, nomad, }
@@ -17440,7 +17440,7 @@ building temple_of_horse_2
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -17479,7 +17479,7 @@ building temple_of_horse_2
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -17516,7 +17516,7 @@ building temple_of_horse_2
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -17555,7 +17555,7 @@ building temple_of_horse_2
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -17592,7 +17592,7 @@ building temple_of_horse_2
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -17631,7 +17631,7 @@ building temple_of_horse_2
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -17668,7 +17668,7 @@ building temple_of_alexander
 	icon religion
 	levels temple_of_alexander_shrine temple_of_alexander_temple temple_of_alexander_large_temple temple_of_alexander_awesome_temple temple_of_alexander_pantheon 
 	{
-		temple_of_alexander_shrine requires factions { anatolian, egypt, macedon, seleucid, } ; and no_other_temple 
+		temple_of_alexander_shrine requires factions { anatolian, egypt, macedon, seleucid, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
 			ai_destruction_hint requires not factions { egypt, macedon, seleucid, }
@@ -17685,7 +17685,7 @@ building temple_of_alexander
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 				
 				religious_belief roman 1 requires roman_faction_built
 				religious_belief italic 1 requires italic_faction_built
@@ -17724,7 +17724,7 @@ building temple_of_alexander
 				;;;;religious_belief mesopotamian 1 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 1 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -17761,7 +17761,7 @@ building temple_of_alexander
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 2 requires roman_faction_built
 				religious_belief italic 2 requires italic_faction_built
@@ -17800,7 +17800,7 @@ building temple_of_alexander
 				;;;;religious_belief mesopotamian 2 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 2 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -2 requires size1
 				taxable_income_bonus bonus -2 requires size2
 				taxable_income_bonus bonus -4 requires size3
@@ -17837,7 +17837,7 @@ building temple_of_alexander
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 3 requires roman_faction_built
 				religious_belief italic 3 requires italic_faction_built
@@ -17876,7 +17876,7 @@ building temple_of_alexander
 				;;;;religious_belief mesopotamian 3 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 3 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -3 requires size1
 				taxable_income_bonus bonus -3 requires size2
 				taxable_income_bonus bonus -6 requires size3
@@ -17914,7 +17914,7 @@ building temple_of_alexander
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 4 requires roman_faction_built
 				religious_belief italic 4 requires italic_faction_built
@@ -17953,7 +17953,7 @@ building temple_of_alexander
 				;;;;religious_belief mesopotamian 4 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 4 requires culture_area_judaean
 
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -4 requires size1
 				taxable_income_bonus bonus -4 requires size2
 				taxable_income_bonus bonus -8 requires size3
@@ -17991,7 +17991,7 @@ building temple_of_alexander
 				
 				;;;;;building rework;;;;;
 				
-				;;;;;;;;;;;;;;;;;;;;   passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
+				;;;;;;;;;;;;;;;;;;;  passive cultural conversions   ;;;;;;;;;;;;;;;;;;;;
 
 				religious_belief roman 5 requires roman_faction_built
 				religious_belief italic 5 requires italic_faction_built
@@ -18030,7 +18030,7 @@ building temple_of_alexander
 				;;;;religious_belief mesopotamian 5 requires culture_area_mesopotamian
 				;;;;religious_belief judaean 5 requires culture_area_judaean
 				
-				;;; maintenance
+				;;maintenance
 				taxable_income_bonus bonus -5 requires size1
 				taxable_income_bonus bonus -5 requires size2
 				taxable_income_bonus bonus -10 requires size3
