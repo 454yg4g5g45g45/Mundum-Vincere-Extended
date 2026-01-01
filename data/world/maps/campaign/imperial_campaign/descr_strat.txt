@@ -21970,7 +21970,7 @@ settlement
 	plan_set default_set
 	faction_creator cyrene
 	garrisoned_army
-	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 1 armour 0 weapon_lvl 0
 	unit	libyan peltast		exp 0 armour 0 weapon_lvl 0
 	building
 	{
