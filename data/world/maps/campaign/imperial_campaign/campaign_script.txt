@@ -75,7 +75,7 @@ monitor_event FactionTurnStart FactionType slave
 
 console_command add_money slave -5999999999
 
-console_command add_money all -11750
+console_command add_money all -11755
 
 end_monitor
 

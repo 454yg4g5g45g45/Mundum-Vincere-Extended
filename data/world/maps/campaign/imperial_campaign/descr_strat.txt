@@ -40261,24 +40261,6 @@ settlement
 settlement
 {
 	level town
-	region Agrinagara_R
-
-	year_founded 0
-	population 1200
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
 	region Purulia_R
 
 	year_founded 0
@@ -42697,11 +42679,6 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
 ;	Purulia
 character	Taharqa, general, age 20, , x 972, y 231
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Agrinagara
-character	Taharqa, general, age 20, , x 869, y 210
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
@@ -46920,6 +46897,32 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+settlement
+{
+	level town
+	region Agrinagara_R
+
+	year_founded 0
+	population 400
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
