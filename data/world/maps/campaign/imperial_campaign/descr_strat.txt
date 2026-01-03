@@ -46351,7 +46351,7 @@ settlement
 	region Harmozeia_R
 
 	year_founded 0
-	population 1150
+	population 1050
 	plan_set default_set
 	faction_creator persis
 	garrisoned_army
