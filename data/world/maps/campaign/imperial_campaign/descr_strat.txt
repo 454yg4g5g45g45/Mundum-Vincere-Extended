@@ -46472,7 +46472,7 @@ settlement
 	region Pura_R
 
 	year_founded 0
-	population 1100
+	population 1000
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46480,7 +46480,7 @@ settlement
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46544,7 +46544,7 @@ relative 	Satres of Gedrosia, 	Arxa,		Narai of Gedrosia,	    Orontobates of Gedr
 
 faction	corinth, greek_passive
 dead_until_resurrected
-denari	-6000
+denari	-7000
 ;;character	Oenomaus Bacchides, named character, leader, age 38, , x 227, y 202 ;;coords outdated
 ;;traits GoodCommander 2, GoodAdministrator 2
 ;;army
