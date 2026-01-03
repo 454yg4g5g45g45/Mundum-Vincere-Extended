@@ -134,6 +134,10 @@ faction persis
 model eastern_male_peasant		40
 model east_female_peasant  		60
 
+faction gedrosia
+model eastern_male_peasant		40
+model east_female_peasant  		60
+
 faction gerrha
 model eastern_male_peasant		40
 model east_female_peasant		60

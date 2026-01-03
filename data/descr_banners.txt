@@ -509,7 +509,13 @@ rebels_texture		models/textures/standard_slave.tga
 routing_texture		models/textures/standard_routing.tga
 ally_texture		models/textures/standard_slave.tga
 
-faction				persis	;; Unfinished
+faction				persis	    ;; Unfinished
+standard_texture	models/textures/standard_slave.tga
+rebels_texture		models/textures/standard_slave.tga
+routing_texture		models/textures/standard_routing.tga
+ally_texture		models/textures/standard_slave.tga
+
+faction				gedrosia	;; Unfinished
 standard_texture	models/textures/standard_slave.tga
 rebels_texture		models/textures/standard_slave.tga
 routing_texture		models/textures/standard_routing.tga

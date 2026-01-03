@@ -109,6 +109,12 @@ strat_model		sm_eastern_general
 battle_model	east_general
 battle_equip	gladius, chainmail shirt helmet and rectangular shield
 
+faction			gedrosia
+dictionary		2
+strat_model		sm_eastern_general
+battle_model	east_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
 faction			pontus
 dictionary		2
 strat_model		sm_eastern_general
@@ -1668,6 +1674,13 @@ battle_model	east_lesser_general
 battle_equip	gladius, chainmail shirt helmet and rectangular shield
 
 faction			persis
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		sm_eastern_lesser_general
+battle_model	east_lesser_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
+faction			gedrosia
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_general_celt.tga
 strat_model		sm_eastern_lesser_general
@@ -3472,6 +3485,11 @@ dictionary		2
 strat_card		data/ui/roman/agents/card_spy.tga
 strat_model		spy
 
+faction			gedrosia
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+
 faction			pontus
 dictionary		2
 strat_card		data/ui/roman/agents/card_spy.tga
@@ -4796,6 +4814,11 @@ dictionary		2
 strat_card		data/ui/roman/agents/card_assassin.tga
 strat_model		assassin
 
+faction			gedrosia
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+
 faction			pontus
 dictionary		2
 strat_card		data/ui/roman/agents/card_assassin.tga
@@ -6109,6 +6132,11 @@ strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		diplomat
 
 faction			persis
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
+faction			gedrosia
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		diplomat
@@ -7429,6 +7457,11 @@ dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		merchant
 
+faction			gedrosia
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat
+
 faction			pontus
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
@@ -8738,6 +8771,11 @@ strat_card		data/ui/eastern/agents/temp_admiral.tga
 strat_model		parthia_admiral
 
 faction			persis
+dictionary		2
+strat_card		data/ui/eastern/agents/temp_admiral.tga
+strat_model		parthia_admiral
+
+faction			gedrosia
 dictionary		2
 strat_card		data/ui/eastern/agents/temp_admiral.tga
 strat_model		parthia_admiral

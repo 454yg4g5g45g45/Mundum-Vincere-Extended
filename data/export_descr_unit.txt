@@ -3755,7 +3755,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 190, 170, 20, 30, 190
-ownership        anatolian, tibetan, tocharian, armenia, parthia, pontus, nabataea, albania, atropatene, colchis, iberia, palmyra, chorasmia, persis, agyrion, slave
+ownership        anatolian, tibetan, tocharian, armenia, parthia, pontus, nabataea, albania, atropatene, colchis, iberia, palmyra, chorasmia, persis, gedrosia, agyrion, slave
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity pontus, Pontus
@@ -3814,7 +3814,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 330, 150, 40, 50, 330
-ownership        anatolian, tibetan, tocharian, armenia, parthia, pontus, albania, atropatene, colchis, iberia, palmyra, chorasmia, persis, agyrion, teion, slave
+ownership        anatolian, tibetan, tocharian, armenia, parthia, pontus, albania, atropatene, colchis, iberia, palmyra, chorasmia, persis, gedrosia, agyrion, teion, slave
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity pontus, Pontus
@@ -4055,7 +4055,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 630, 160, 70, 100, 630
-ownership        anatolian, tibetan, tocharian, pontus, albania, atropatene, iberia, palmyra, chorasmia, persis, agyrion, slave
+ownership        anatolian, tibetan, tocharian, pontus, albania, atropatene, iberia, palmyra, chorasmia, persis, gedrosia, agyrion, slave
 ethnicity pontus, Pontus
  
  
@@ -4084,7 +4084,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        2, 940, 190, 100, 150, 940
-ownership        anatolian, tibetan, tocharian, parthia, armenia, seleucid, albania, atropatene, iberia, palmyra, chorasmia, persis, agyrion
+ownership        anatolian, tibetan, tocharian, parthia, armenia, seleucid, albania, atropatene, iberia, palmyra, chorasmia, persis, gedrosia, agyrion
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity seleucid, Syria
@@ -4222,7 +4222,7 @@ stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        1, 440, 110, 50, 70, 440
-ownership        anatolian, tibetan, tocharian, parthia, armenia, albania, atropatene, iberia, palmyra, chorasmia, persis, agyrion, slave
+ownership        anatolian, tibetan, tocharian, parthia, armenia, albania, atropatene, iberia, palmyra, chorasmia, persis, gedrosia, agyrion, slave
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
  
@@ -4444,7 +4444,7 @@ stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
 stat_cost        4, 1400, 90, 140, 210, 1400
-ownership        anatolian, tibetan, caucasian, eastern, tocharian, parthia, armenia, arab, axum, blemmyes, albania, atropatene, iberia, palmyra, chorasmia, persis, agyrion
+ownership        anatolian, tibetan, caucasian, eastern, tocharian, parthia, armenia, arab, axum, blemmyes, albania, atropatene, iberia, palmyra, chorasmia, persis, gedrosia, agyrion
 ethnicity armenia, Armenia
 ethnicity parthia, Elymais
 ethnicity nabataea, Nabataea

@@ -41855,7 +41855,7 @@ settlement
 	region Barna_R
 
 	year_founded 0
-	population 800
+	population 700
 	plan_set default_set
 	faction_creator india
 	building
@@ -46451,7 +46451,7 @@ denari	5000
 
 faction	italiotes, greek_passive
 dead_until_resurrected
-denari	6000
+denari	5000
 
 faction	lucani, greek_passive
 dead_until_resurrected
@@ -46459,11 +46459,11 @@ denari	6000
 
 faction	paeligni, greek_passive
 dead_until_resurrected
-denari	6000
+denari	4000
 
 faction	sabines, greek_passive
 dead_until_resurrected
-denari	5000
+denari	4000
 
 faction	samnites, greek_passive
 dead_until_resurrected

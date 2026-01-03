@@ -15583,7 +15583,7 @@ building temple_of_one_god
 		temple_of_one_god_shrine requires factions { anatolian, parthia, persis, } and no_other_temple 
 		{
 			;;conditions under which the AI will destroy this building
-			ai_destruction_hint requires not factions { anatolian, parthia, }
+			ai_destruction_hint requires not factions { anatolian, parthia, persis, }
 
 			capability
 			{
@@ -15659,7 +15659,7 @@ building temple_of_one_god
 		temple_of_one_god_temple requires factions { anatolian, parthia, persis, } 
 		{
 			;;conditions under which the AI will destroy this building
-			ai_destruction_hint requires not factions { anatolian, parthia, }
+			ai_destruction_hint requires not factions { anatolian, parthia, persis, } 
 
 			capability
 			{
@@ -15735,7 +15735,7 @@ building temple_of_one_god
 		temple_of_one_god_large_temple requires factions { anatolian, parthia, persis, } 
 		{
 			;;conditions under which the AI will destroy this building
-			ai_destruction_hint requires not factions { anatolian, parthia, }
+			ai_destruction_hint requires not factions { anatolian, parthia, persis, } 
 
 			capability
 			{
@@ -15811,7 +15811,7 @@ building temple_of_one_god
 		temple_of_one_god_awesome_temple requires factions { anatolian, parthia, persis, } 
 		{
 			;;conditions under which the AI will destroy this building
-			ai_destruction_hint requires not factions { anatolian, parthia, }
+			ai_destruction_hint requires not factions { anatolian, parthia, persis, } 
 
 			capability
 			{
@@ -15887,7 +15887,7 @@ building temple_of_one_god
 		temple_of_one_god_pantheon requires factions { anatolian, parthia, persis, } 
 		{
 			;;conditions under which the AI will destroy this building
-			ai_destruction_hint requires not factions { anatolian, parthia, }
+			ai_destruction_hint requires not factions { anatolian, parthia, persis, } 
 
 			capability
 			{

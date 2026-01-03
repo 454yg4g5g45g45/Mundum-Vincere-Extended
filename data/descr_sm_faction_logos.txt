@@ -303,3 +303,4 @@ icon	ui/faction_icons/sparta.tga				; 296
 icon	ui/faction_icons/teion.tga				; 297
 icon	ui/faction_icons/troezen.tga			; 298
 icon	ui/faction_icons/persis.tga			    ; 299
+icon	ui/faction_icons/gedrosia.tga			; 300

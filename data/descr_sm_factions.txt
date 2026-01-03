@@ -3791,6 +3791,80 @@
 		"allow reproduction": true,
 	},
 
+	"gedrosia":
+	{
+		;;name and description
+		"string":      "GEDROSIA",
+		"description": "GEDROSIA_DESCR",
+
+		;;culture and (default?) character ethnicity
+		"culture":   "eastern",
+		"ethnicity": "arabic",
+
+		;;tags for faction groups
+		"tags": [ ],
+
+		;;namelists
+		"namelists":
+		{
+			"men":      "parthia_men",
+			"women":    "parthia_women",
+			"surnames": "parthia_surnames",
+		},
+
+		"logos":
+		{
+			;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+			"loading screen icon": "data/ui/faction_icons/gedrosia.tga",
+
+			;;standard index as declared in descr_standards (4 per page)
+			"standard index":       25,
+			"rebel standard index": 25,
+
+			;;logo index as declared in descr_sm_faction_logos (1 per page)
+			"logo index":       300,
+			"rebel logo index": 25,
+
+			;;flag models to be used on the strat map when a settlement is unoccupied
+			"strat symbol model":       "data/models_strat/symbol_eastern_rebel.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_eastern_rebel.CAS",
+		},
+
+		;;faction colours (some base game factions may have hardcoded overrides)
+		"colours":
+		{
+			"primary":   [  12, 6, 61,  ],
+			"secondary": [  255, 230, 0, ],
+
+			"family tree":
+			{
+				"background":      [  12, 6, 61,   ],
+				"font":            [  255, 230, 0, ],
+
+				"selected line":   [  255, 255, 255, ],
+				"unselected line": [  200, 187, 187, ],
+			},
+		},
+
+		"movies":
+		{
+			;;movie to play when starting a campaign
+			"intro": "data/fmv/intros/eastern_intro_1080p.wmv",
+
+			;;movie to play when this faction wins or is defeated, respectively
+			"victory": "data/fmv/victory/eastern_outro.wmv",
+			"defeat": "data/fmv/lose/rebels_eliminated.wmv",
+		},
+
+		"available in custom battles": false,
+		"prefer naval invasions": false,
+		"default religion": "iranian",
+		"default battle ai personality": "default_personality",
+
+		;;allow this faction to have a functioning family tree
+		"allow reproduction": true,
+	},
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;              2$ ITALIA                 ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
