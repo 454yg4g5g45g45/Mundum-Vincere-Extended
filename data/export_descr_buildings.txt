@@ -1,25 +1,25 @@
-classification option (inside `building` and before first `levels`)
-Example:
+; classification option (inside `building` and before first `levels`)
+; Example:
 ;	 classification core|defence|military|trade|water|culture|religious (deprecated, but recognised:fortification|infrastructure|other)
-This tells the game which category of the building browser to use.
-RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
-If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
-Automatic classification:
-  core_building
+; This tells the game which category of the building browser to use.
+; RomeHD has subtly different classifications than the original, so note the deprecated classifications, they wont work anymore.
+; If no classification is specified, the game will guess based on the building name, which works for all the unmodded buildings.
+; Automatic classification:
+;   core_building
 ;	   core
-  defenses
+;   defenses
 ;	   defence
-  barracks|equestrian|missiles|smith|despotic_law
+;   barracks|equestrian|missiles|smith|despotic_law
 ;	   military
-  market|port_buildings|hinterland_*|caravans
+;   market|port_buildings|hinterland_*|caravans
 ;	   trade
-  health
+;   health
 ;	   water
-  academic|amphitheatres|theatres|taverns
+;   academic|amphitheatres|theatres|taverns
 ;	   culture
-  temple_*|christian_acedemic
+;   temple_*|christian_acedemic
 ;	   religious
-Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
+; Explicit classification overrides the automatic classification, so if you don't like the above classifications, you can overule them.
 
 ;;exclusivity tags, used for the "no_building_tagged" condition
 tags
@@ -31,13 +31,13 @@ tags
 }
 
 ;;alises, give multiple conditions a string (or allow conditions with normally no string to display one)
-alias roman_marian_reforms_triggered
-{
-	requires factions { roman, } and major_event "marian_reforms"
+; alias roman_marian_reforms_triggered
+; {
+; 	requires factions { roman, } and major_event "marian_reforms"
 ;
-	display_string roman_marian_reforms ;;gets a string from expanded_bi
-	;if display_string isn't included it will just display the strings for the events normally
-}
+; 	display_string roman_marian_reforms ;;gets a string from expanded_bi
+; 	;; if display_string isn't included it will just display the strings for the events normally
+; }
 
 alias no_other_temple
 {
@@ -2183,7 +2183,7 @@ building core_building
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -15596550 requires factions { slave, }
+				taxable_income_bonus bonus -35596550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peasant briton"  0
@@ -2603,7 +2603,7 @@ building core_building
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peasant briton"  0
@@ -2924,7 +2924,7 @@ building core_building
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peasant briton"  0
@@ -3874,7 +3874,7 @@ building hinterland_gov_colony_1
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -3940,7 +3940,7 @@ building hinterland_gov_colony_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -4008,7 +4008,7 @@ building hinterland_gov_direct_1
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -4074,7 +4074,7 @@ building hinterland_gov_direct_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 2
@@ -4140,7 +4140,7 @@ building hinterland_gov_allied_1
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 3
@@ -4171,7 +4171,7 @@ building hinterland_gov_allied_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 3
@@ -4202,7 +4202,7 @@ building hinterland_gov_allied_3
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus -3
@@ -4273,7 +4273,7 @@ building hinterland_roman_praefectura
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 10
@@ -4308,7 +4308,7 @@ building hinterland_roman_civitas
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus -3
@@ -4332,7 +4332,7 @@ building hinterland_roman_civitas
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 1
@@ -4357,7 +4357,7 @@ building hinterland_roman_civitas
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 2
@@ -4394,7 +4394,7 @@ building hinterland_roman_municipium
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -4418,7 +4418,7 @@ building hinterland_roman_municipium
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -4455,7 +4455,7 @@ building hinterland_roman_colonia_latina
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1
@@ -4493,7 +4493,7 @@ building hinterland_roman_colonia
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 2
@@ -4519,7 +4519,7 @@ building hinterland_roman_colonia
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "vestal guard"  0
@@ -4567,7 +4567,7 @@ building hinterland_greek_phrourion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 5
@@ -4603,7 +4603,7 @@ building hinterland_greek_katoikia
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				
@@ -4642,7 +4642,7 @@ building hinterland_greek_klerouchia
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -76550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				
@@ -4713,7 +4713,7 @@ building hinterland_greek_polis
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 7
@@ -4754,6 +4754,7 @@ building defenses
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
 				taxable_income_bonus bonus -96550 requires factions { slave, }
+				taxable_income_bonus bonus -396550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				wall_level 0
@@ -4762,7 +4763,7 @@ building defenses
 				
 				;;;;;building rework;;;;;
 
-				taxable_income_bonus bonus 11
+				taxable_income_bonus bonus 10
 				taxable_income_bonus bonus -1 requires size1
 				taxable_income_bonus bonus -1 requires size2
 				taxable_income_bonus bonus -2 requires size3
@@ -4859,7 +4860,7 @@ building defenses
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -556550 requires factions { slave, }
+				taxable_income_bonus bonus -656550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				wall_level 3
@@ -5030,7 +5031,7 @@ building barracks
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb infantry briton"  0
@@ -5192,7 +5193,7 @@ building barracks
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb infantry briton"  0
@@ -5426,7 +5427,7 @@ building barracks
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb infantry briton"  0
@@ -5707,7 +5708,7 @@ building barracks
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb infantry briton"  0
@@ -6007,7 +6008,7 @@ building equestrian
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb cavalry gaul"  0
@@ -6127,7 +6128,7 @@ building equestrian
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb cavalry gaul"  0
@@ -6304,7 +6305,7 @@ building equestrian
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb cavalry gaul"  1
@@ -6524,7 +6525,7 @@ building equestrian
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb cavalry gaul"  2
@@ -6779,7 +6780,7 @@ building missiles
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peltast gaul"  0
@@ -6878,7 +6879,7 @@ building missiles
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peltast gaul"  0
@@ -7021,7 +7022,7 @@ building missiles
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peltast gaul"  1
@@ -7202,7 +7203,7 @@ building missiles
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peltast gaul"  2
@@ -7435,7 +7436,7 @@ building market
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				agent spy  0
@@ -7465,7 +7466,7 @@ building market
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				agent spy  0
@@ -7497,7 +7498,7 @@ building market
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				agent spy  0
@@ -7576,7 +7577,7 @@ building smith
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb chariot light briton"  0
@@ -7621,7 +7622,7 @@ building smith
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb chariot heavy briton"  0
@@ -7675,7 +7676,7 @@ building smith
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb chariot heavy briton"  0
@@ -7743,7 +7744,7 @@ building port_buildings
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "naval boats"  0 
@@ -7797,7 +7798,7 @@ building port_buildings
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "naval boats"  0 
@@ -7859,7 +7860,7 @@ building port_buildings
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "naval boats"  0 
@@ -7949,7 +7950,7 @@ building health
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				population_health_bonus bonus 1
@@ -7981,7 +7982,7 @@ building health
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				population_health_bonus bonus 2
@@ -8013,7 +8014,7 @@ building health
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				population_health_bonus bonus 3
@@ -8045,7 +8046,7 @@ building health
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				population_health_bonus bonus 4
@@ -8091,7 +8092,7 @@ building hinterland_farms
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;;building rework
@@ -8113,7 +8114,7 @@ building hinterland_farms
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;;building rework
@@ -8135,7 +8136,7 @@ building hinterland_farms
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;;building rework
@@ -8157,7 +8158,7 @@ building hinterland_farms
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;;building rework
@@ -8179,7 +8180,7 @@ building hinterland_farms
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;;building rework
@@ -8215,7 +8216,7 @@ building hinterland_roads
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				road_level 0
@@ -8233,7 +8234,7 @@ building hinterland_roads
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				road_level 1
@@ -8251,7 +8252,7 @@ building hinterland_roads
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				road_level 2
@@ -8283,7 +8284,7 @@ building hinterland_mines
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				mine_resource 8
@@ -8319,7 +8320,7 @@ building hinterland_mines
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				mine_resource 14
@@ -8369,7 +8370,7 @@ building academic
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				;JNF 2021-11-01 - Add trait and retinue stuff as a dummy string with a positive effect
@@ -8404,7 +8405,7 @@ building academic
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				dummy Capability_TraitsAndRetinue 1
@@ -8438,7 +8439,7 @@ building academic
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				dummy Capability_TraitsAndRetinue 3
@@ -8486,7 +8487,7 @@ building amphitheatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "roman velite gladiator"  0
@@ -8523,7 +8524,7 @@ building amphitheatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "roman velite gladiator"  0
@@ -8561,7 +8562,7 @@ building amphitheatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "roman velite gladiator"  0
@@ -8609,7 +8610,7 @@ building theatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 1 requires factions { greek, thracian, paeonian, }
@@ -8642,7 +8643,7 @@ building theatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 2 requires factions { greek, thracian, paeonian, }
@@ -8675,7 +8676,7 @@ building theatres
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 3 requires factions { greek, thracian, paeonian, }
@@ -8722,7 +8723,7 @@ building despotic_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 1 requires factions { carthaginian, eastern, anatolian, arab, caucasian, nubian, numidian, egyptian, indian, tamil, tibetan, tocharian, }
@@ -8755,7 +8756,7 @@ building despotic_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 2 requires factions { carthaginian, eastern, anatolian, arab, caucasian, nubian, numidian, egyptian, indian, tamil, tibetan, tocharian, }
@@ -8788,7 +8789,7 @@ building despotic_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 3 requires factions { carthaginian, eastern, anatolian, arab, caucasian, nubian, numidian, egyptian, indian, tamil, tibetan, tocharian, }
@@ -8834,7 +8835,7 @@ building caravans
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				trade_base_income_bonus bonus 2
@@ -8852,7 +8853,7 @@ building caravans
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				trade_base_income_bonus bonus 4
@@ -8870,7 +8871,7 @@ building caravans
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				trade_base_income_bonus bonus 6
@@ -8903,7 +8904,7 @@ building taverns
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				happiness_bonus bonus 1 requires factions { barbarian, baltic, brittonic, dacian, germanic, iberian, nomad, nuragic, }
@@ -8937,7 +8938,7 @@ building taverns
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb night raiders german"  0
@@ -9087,7 +9088,7 @@ building temple_of_religion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb druids gaul"  0
@@ -9192,7 +9193,7 @@ building temple_of_religion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb druids gaul"  0
@@ -9295,7 +9296,7 @@ building temple_of_religion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb druids gaul"  0
@@ -9398,7 +9399,7 @@ building temple_of_religion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb druids gaul"  0
@@ -9501,7 +9502,7 @@ building temple_of_religion
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb druids gaul"  0
@@ -9722,7 +9723,7 @@ building temple_of_battle
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -9799,7 +9800,7 @@ building temple_of_battle
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -9878,7 +9879,7 @@ building temple_of_battle
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -9956,7 +9957,7 @@ building temple_of_battle
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10035,7 +10036,7 @@ building temple_of_battle
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10124,7 +10125,7 @@ building temple_of_battleforge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10201,7 +10202,7 @@ building temple_of_battleforge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10280,7 +10281,7 @@ building temple_of_battleforge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10360,7 +10361,7 @@ building temple_of_battleforge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10441,7 +10442,7 @@ building temple_of_battleforge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10533,7 +10534,7 @@ building temple_of_farming
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10610,7 +10611,7 @@ building temple_of_farming
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10687,7 +10688,7 @@ building temple_of_farming
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10764,7 +10765,7 @@ building temple_of_farming
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10841,7 +10842,7 @@ building temple_of_farming
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -10930,7 +10931,7 @@ building temple_of_fertility
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11008,7 +11009,7 @@ building temple_of_fertility
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11088,7 +11089,7 @@ building temple_of_fertility
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11168,7 +11169,7 @@ building temple_of_fertility
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11249,7 +11250,7 @@ building temple_of_fertility
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11342,7 +11343,7 @@ building temple_of_forge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11419,7 +11420,7 @@ building temple_of_forge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11497,7 +11498,7 @@ building temple_of_forge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11576,7 +11577,7 @@ building temple_of_forge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11656,7 +11657,7 @@ building temple_of_forge
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11747,7 +11748,7 @@ building temple_of_fun
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11823,7 +11824,7 @@ building temple_of_fun
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11899,7 +11900,7 @@ building temple_of_fun
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -11975,7 +11976,7 @@ building temple_of_fun
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12051,7 +12052,7 @@ building temple_of_fun
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12139,7 +12140,7 @@ building temple_of_governors
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12216,7 +12217,7 @@ building temple_of_governors
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12293,7 +12294,7 @@ building temple_of_governors
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12370,7 +12371,7 @@ building temple_of_governors
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12447,7 +12448,7 @@ building temple_of_governors
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12537,7 +12538,7 @@ building temple_of_healing
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12614,7 +12615,7 @@ building temple_of_healing
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12691,7 +12692,7 @@ building temple_of_healing
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12770,7 +12771,7 @@ building temple_of_healing
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12849,7 +12850,7 @@ building temple_of_healing
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -12940,7 +12941,7 @@ building temple_of_horse
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13017,7 +13018,7 @@ building temple_of_horse
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13094,7 +13095,7 @@ building temple_of_horse
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13174,7 +13175,7 @@ building temple_of_horse
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13254,7 +13255,7 @@ building temple_of_horse
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13344,7 +13345,7 @@ building temple_of_hunting
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13421,7 +13422,7 @@ building temple_of_hunting
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13498,7 +13499,7 @@ building temple_of_hunting
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13576,7 +13577,7 @@ building temple_of_hunting
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13654,7 +13655,7 @@ building temple_of_hunting
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13744,7 +13745,7 @@ building temple_of_justice
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13821,7 +13822,7 @@ building temple_of_justice
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13899,7 +13900,7 @@ building temple_of_justice
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -13980,7 +13981,7 @@ building temple_of_justice
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14063,7 +14064,7 @@ building temple_of_justice
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14158,7 +14159,7 @@ building temple_of_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14235,7 +14236,7 @@ building temple_of_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14312,7 +14313,7 @@ building temple_of_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14389,7 +14390,7 @@ building temple_of_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14467,7 +14468,7 @@ building temple_of_law
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14558,7 +14559,7 @@ building temple_of_leadership
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14635,7 +14636,7 @@ building temple_of_leadership
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14713,7 +14714,7 @@ building temple_of_leadership
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14790,7 +14791,7 @@ building temple_of_leadership
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14869,7 +14870,7 @@ building temple_of_leadership
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -14959,7 +14960,7 @@ building temple_of_love
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15036,7 +15037,7 @@ building temple_of_love
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15114,7 +15115,7 @@ building temple_of_love
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15194,7 +15195,7 @@ building temple_of_love
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15274,7 +15275,7 @@ building temple_of_love
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15367,7 +15368,7 @@ building temple_of_naval
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15443,7 +15444,7 @@ building temple_of_naval
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15519,7 +15520,7 @@ building temple_of_naval
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15595,7 +15596,7 @@ building temple_of_naval
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15671,7 +15672,7 @@ building temple_of_naval
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15761,7 +15762,7 @@ building temple_of_one_god
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15838,7 +15839,7 @@ building temple_of_one_god
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15915,7 +15916,7 @@ building temple_of_one_god
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -15992,7 +15993,7 @@ building temple_of_one_god
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16069,7 +16070,7 @@ building temple_of_one_god
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16156,7 +16157,7 @@ building temple_of_trade
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16235,7 +16236,7 @@ building temple_of_trade
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16314,7 +16315,7 @@ building temple_of_trade
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16396,7 +16397,7 @@ building temple_of_trade
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16478,7 +16479,7 @@ building temple_of_trade
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16572,7 +16573,7 @@ building temple_of_victory
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16649,7 +16650,7 @@ building temple_of_victory
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16728,7 +16729,7 @@ building temple_of_victory
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16808,7 +16809,7 @@ building temple_of_victory
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16888,7 +16889,7 @@ building temple_of_victory
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -16981,7 +16982,7 @@ building temple_of_violence
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17057,7 +17058,7 @@ building temple_of_violence
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17134,7 +17135,7 @@ building temple_of_violence
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17212,7 +17213,7 @@ building temple_of_violence
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17383,7 +17384,7 @@ building temple_of_viking
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17460,7 +17461,7 @@ building temple_of_viking
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17538,7 +17539,7 @@ building temple_of_viking
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17627,7 +17628,7 @@ building temple_of_horse_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17704,7 +17705,7 @@ building temple_of_horse_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17781,7 +17782,7 @@ building temple_of_horse_2
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17875,7 +17876,7 @@ building temple_of_alexander
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -17937,7 +17938,7 @@ building temple_of_alexander
 				taxable_income_bonus bonus -6 requires size10
 			}
 			construction  2 
-			cost  1600  
+			cost  1800  
 			settlement_min town
 			upgrades
 			{
@@ -17952,7 +17953,7 @@ building temple_of_alexander
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -18029,7 +18030,7 @@ building temple_of_alexander
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -18106,7 +18107,7 @@ building temple_of_alexander
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -86550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -18169,7 +18170,7 @@ building temple_of_alexander
 				taxable_income_bonus bonus -24 requires size10
 			}
 			construction  8 
-			cost  12800 
+			cost  13800 
 			settlement_min large_city
 			upgrades
 			{
@@ -18184,7 +18185,7 @@ building temple_of_alexander
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -56550 requires factions { slave, }
+				taxable_income_bonus bonus -76550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 
@@ -18247,7 +18248,7 @@ building temple_of_alexander
 				taxable_income_bonus bonus -30 requires size10
 			}
 			construction  10 
-			cost  29600 
+			cost  39700 
 			settlement_min huge_city
 			upgrades
 			{
@@ -18255,6 +18256,81 @@ building temple_of_alexander
 		}
 	}
 	plugins 
+	{
+	}
+}
+
+building greco_persian_palatial_estates
+{
+	classification core
+	icon government
+	levels greco_persian_palatial_estates_01
+	{
+		greco_persian_palatial_estates_01 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+		{
+			;;conditions under which the AI will destroy this building
+			ai_destruction_hint requires not factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+
+			capability
+			{
+				taxable_income_bonus bonus 28 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				taxable_income_bonus bonus -499976550 requires factions { slave, }
+				taxable_income_bonus bonus 4 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				trade_base_income_bonus bonus 22 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				taxable_income_bonus bonus -9799 requires not factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+
+				law_bonus bonus 7 requires factions { seleucid, bactria, pergamon, antiochea_taocene, agyrion, }
+				law_bonus bonus -1 requires factions { cappadocia, persis, gedrosia, gedrosia, ferghana, } ;;Harder to keep Hellenized systems and infastructure but profitable
+				happiness_bonus bonus -2 requires factions { seleucid, bactria, pergamon, antiochea_taocene, agyrion, } ;; Signifiant bloat to Hellenic in origin nations
+				happiness_bonus bonus 4 requires factions { cappadocia, persis, gedrosia, gedrosia, ferghana, } ;;Provides More Loyalty with people who universalled liked the infastructure
+				population_growth_bonus bonus -2 ;; Old Financial semi-serfdom system not popular with the poor but better than nothing due to some profit yield by generation
+				population_growth_bonus bonus -26 requires not factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, } ;; Old Financial semi-serfdom system not popular with the poor but better than nothing due to some profit yield by generation
+				taxable_income_bonus bonus 5 ; Base Profit
+				taxable_income_bonus bonus -3 ; Base Expense
+				taxable_income_bonus bonus 268 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+
+				;;;; Cultural Promotion ;;
+
+				;; Positive
+
+				religious_belief greek 14 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief iranian 8 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief anatolian 4 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief tocharian 2 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief assyrian 2 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief mesopotamian 2 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+
+				;; Negative
+
+				religious_belief italic -38 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief arab -19 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief indian -18 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief tibetan -9 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief ethiopian -5 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief armenian -5 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+				religious_belief saka -3 requires factions { seleucid, cappadocia, bactria, pergamon, antiochea_taocene, persis, gedrosia, agyrion, ferghana, }
+
+				;;maintenance
+				taxable_income_bonus bonus -1 requires size1
+				taxable_income_bonus bonus -1 requires size2
+				taxable_income_bonus bonus -2 requires size3
+				taxable_income_bonus bonus -2 requires size4
+				taxable_income_bonus bonus -3 requires size5
+				taxable_income_bonus bonus -4 requires size6
+				taxable_income_bonus bonus -4 requires size7
+				taxable_income_bonus bonus -5 requires size8
+				taxable_income_bonus bonus -6 requires size9
+				taxable_income_bonus bonus -7 requires size10
+			}
+			construction 11
+			cost  149600 
+			settlement_min village
+			upgrades
+			{
+			}
+		}
+	}
+	plugins
 	{
 	}
 }

@@ -40202,24 +40202,6 @@ settlement
 settlement
 {
 	level town
-	region Xerogerei_R
-
-	year_founded 0
-	population 1200
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
 	region Purulia_R
 
 	year_founded 0
@@ -41077,25 +41059,7 @@ settlement
 	region Than_R
 
 	year_founded 0
-	population 1000
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
-	region Yerragudi_R
-
-	year_founded 0
-	population 1200
+	population 300
 	plan_set default_set
 	faction_creator india
 	building
@@ -41113,7 +41077,7 @@ settlement
 	region Suvarnagiri_R
 
 	year_founded 0
-	population 1200
+	population 900
 	plan_set default_set
 	faction_creator india
 	building
@@ -42559,11 +42523,6 @@ character	Taharqa, general, age 20, , x 972, y 231
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
-;	Xerogerei
-character	Taharqa, general, age 20, , x 863, y 198
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
 ;	Modogulla
 character	Taharqa, general, age 20, , x 892, y 128
 army
@@ -42621,11 +42580,6 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
 ;	Azika
 character	Taharqa, general, age 20, , x 780, y 242
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Yerragudi
-character	Taharqa, general, age 20, , x 907, y 122
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
@@ -46470,7 +46424,7 @@ relative 	Satres of Gedrosia, 	Arxa,		Narai of Gedrosia,	    Orontobates of Gedr
 faction	antiochea_taocene, greek_passive
 ai_do_not_attack_faction seleucid
 ai_do_not_attack_faction bactria
-denari	9615
+denari	9825
 settlement
 {
 	level town
@@ -46511,7 +46465,7 @@ settlement
 	region Bushahr_R
 
 	year_founded 0
-	population 310
+	population 305
 	plan_set default_set
 	faction_creator antiochea_taocene
 	garrisoned_army
@@ -46559,6 +46513,9 @@ settlement
 	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
 	unit	east infantry		exp 2 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
@@ -46587,14 +46544,15 @@ settlement
 	region Abdun_Taocene_R
 
 	year_founded 0
-	population 310
+	population 300
 	plan_set default_set
 	faction_creator antiochea_taocene
 	garrisoned_army
 	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
-	unit	greek hoplite		exp 2 armour 2 weapon_lvl 3
-	unit	east infantry		exp 1 armour 0 weapon_lvl 0
-	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	greek hoplite		exp 4 armour 2 weapon_lvl 3
+	unit	east infantry		exp 2 armour 0 weapon_lvl 0
+	unit	east infantry		exp 2 armour 0 weapon_lvl 0
+	unit	east infantry		exp 2 armour 0 weapon_lvl 0
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
@@ -46602,6 +46560,10 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
@@ -46624,10 +46586,13 @@ settlement
 	region Parsha_R
 
 	year_founded 0
-	population 301
+	population 300
 	plan_set default_set
 	faction_creator antiochea_taocene
 	garrisoned_army
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
 	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46636,6 +46601,13 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	building
 	{
@@ -46651,7 +46623,7 @@ settlement
 	}
 }
 ;	Dayya_R
-character	Adamanthaleus of Epardus, named character, leader, age 36, , x 625, y 230
+character	Adamanthaleus of Epardus, named character, leader, age 36, , x 620, y 206
 traits GoodCommander 5, GoodAdministrator 4, Warlord 4, NaturalMilitarySkill 4, GoodAttacker 3, GoodRiskyAttacker 2, GoodMiner 2
 army
 unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
@@ -46661,15 +46633,17 @@ unit		greek medium cavalry		exp 8 armour 2 weapon_lvl 3
 unit		greek hoplite		exp 5 armour 2 weapon_lvl 3
 unit		taoceneian irregulars		exp 9 armour 2 weapon_lvl 2
 unit		taoceneian irregulars		exp 8 armour 1 weapon_lvl 2
+unit		taoceneian irregulars		exp 7 armour 1 weapon_lvl 3
+unit		taoceneian irregulars		exp 8 armour 1 weapon_lvl 2
 unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 2
 unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 2
-unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
-unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 2
+unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 1
 unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
 unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
 unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
 unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
-unit		east archer		exp 8 armour 2 weapon_lvl 3
+unit		east archer		exp 9 armour 2 weapon_lvl 3
 unit		east archer		exp 8 armour 1 weapon_lvl 3
 
 character_record		Arxa, 	female, command 0, influence 0, management 0, subterfuge 0, age 36, alive, never_a_leader
@@ -46689,7 +46663,7 @@ relative 	Adamanthaleus of Epardus, 	Arxa,		Herakles of Epardus,	    Synges of E
 
 faction	corinth, greek_passive
 dead_until_resurrected
-denari	-9000
+denari	-19000
 ;;character	Oenomaus Bacchides, named character, leader, age 38, , x 227, y 202 ;;coords outdated
 ;;traits GoodCommander 2, GoodAdministrator 2
 ;;army
@@ -46704,7 +46678,7 @@ denari	-9000
 
 faction	neapolis, greek_passive
 dead_until_resurrected
-denari	3000
+denari	2000
 
 faction	thessaly, greek_passive
 dead_until_resurrected
@@ -46839,7 +46813,7 @@ settlement
 	region MaroukaCity_R
 
 	year_founded 0
-	population 430
+	population 420
 	plan_set default_set
 	faction_creator ferghana
 	building
@@ -46887,7 +46861,6 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	greek peltast		exp 0 armour 0 weapon_lvl 0
 	building
 	{
@@ -46898,7 +46871,27 @@ settlement
 		type defenses wooden_pallisade
 	}
 }
+settlement
+{
+	level town
+	region Xerogerei_R
 
+	year_founded 0
+	population 390
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
 settlement
 {
 	level town
@@ -47076,6 +47069,29 @@ settlement
 settlement
 {
 	level town
+	region Yerragudi_R
+
+	year_founded 0
+	population 300
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+
+settlement
+{
+	level town
 	region Pylamnus_Aethiopis_R
 
 	year_founded 0
@@ -47083,7 +47099,6 @@ settlement
 	plan_set default_set
 	faction_creator axum
 	garrisoned_army
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
