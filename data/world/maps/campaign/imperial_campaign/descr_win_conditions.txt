@@ -185,6 +185,11 @@ take_rome
 short_campaign outlive_factions 
 parthia chorasmia
 
+antiochea_taocene
+take_rome
+short_campaign outlive_factions 
+parthia chorasmia gedrosia persis gerrha galatia
+
 celtiberia
 take_rome
 short_campaign outlive_factions 

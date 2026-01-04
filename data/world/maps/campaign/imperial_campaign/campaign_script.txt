@@ -46,6 +46,7 @@ monitor_event FactionTurnStart FactionIsLocal
 	console_command become_protector seleucid bactria
 	console_command become_protector seleucid pergamon
 	console_command become_protector seleucid cappadocia
+	console_command become_protector seleucid antiochea_taocene
 
 	console_command become_protector egypt cyprus
 
@@ -73,9 +74,9 @@ end_monitor
 
 monitor_event FactionTurnStart FactionType slave
 
-console_command add_money slave -5999999999
+console_command add_money slave -19999999999
 
-console_command add_money all -11755
+console_command add_money all -11500
 
 end_monitor
 

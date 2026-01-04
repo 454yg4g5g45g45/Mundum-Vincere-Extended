@@ -8543,6 +8543,61 @@ Siraf_R
 	6
 	iranian 100
 
+Dayya_R
+	legion: Parthica
+	Dayya
+	antiochea_taocene
+	Syrians
+	64 106 97
+	persia, greek_colony
+	5
+	6
+	assyrian 40 iranian 40 mesopotamian 10 greek 10
+
+Bushahr_R
+	legion: Parthica
+	Bushahr
+	antiochea_taocene
+	Syrians
+	175 108 144
+	persia, greek_colony
+	5
+	6
+	assyrian 40 iranian 40 mesopotamian 10 greek 10
+
+Fariyah_R
+	legion: Parthica
+	Fariyah
+	antiochea_taocene
+	Syrians
+	79 15 15
+	persia, greek_colony
+	5
+	6
+	assyrian 20 iranian 60 mesopotamian 10 greek 10
+
+Abdun_Taocene_R
+	legion: Parthica
+	Abdun_Taocene
+	antiochea_taocene
+	Syrians
+	129 96 96
+	persia, greek_colony
+	5
+	6
+	assyrian 5 iranian 60 mesopotamian 15 greek 20
+
+Parsha_R
+	legion: Parthica
+	Parsha
+	antiochea_taocene
+	Syrians
+	102 104 154
+	persia, greek_colony
+	5
+	6
+	assyrian 5 iranian 60 mesopotamian 15 greek 20
+
 Syringis_R
 	legion: Parthica
 	Syringis

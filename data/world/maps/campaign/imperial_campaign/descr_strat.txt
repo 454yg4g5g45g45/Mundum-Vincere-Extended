@@ -124,6 +124,7 @@ playable
 	taras
 	tylis
 	veneti
+	antiochea_taocene
 end
 unlockable
 end
@@ -10782,7 +10783,7 @@ settlement
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
-	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0	
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	building
@@ -27259,8 +27260,6 @@ character_record		Mithridates Atropates, 	male, command 0, influence 0, manageme
 
 relative 	Artabazanes Atropates, 	Lila,		Mithridates Atropates,	end
 
-
-
 ;--------------- Bactria ---------------
 faction	bactria, balanced_stalin
 denari	6000
@@ -36872,7 +36871,7 @@ relative 	Linus Amphides, 	Hermine,		Pittacus Amphides,	end
 
 ;	Suessetani
 faction	suessiones, celtic_passive
-denari	6000
+denari	5000
 settlement
 {
 	level town
@@ -41201,24 +41200,6 @@ settlement
 settlement
 {
 	level town
-	region Podanapura_R
-
-	year_founded 0
-	population 500
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
 	region Tiagoura_R
 
 	year_founded 0
@@ -42671,12 +42652,7 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 ;	Kondapur
 character	Taharqa, general, age 20, , x 907, y 149
 army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Podanapura
-character	Taharqa, general, age 20, , x 899, y 160
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
+unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 1
 
 ;	Souannagoura
 character	Taharqa, general, age 20, , x 984, y 260
@@ -45894,17 +45870,16 @@ character_record		Motsun Tsenpo, 	male, command 0, influence 0, management 0, su
 
 relative 	Isho Tsenpo, 	Droza,		Motsun Tsenpo,		end
 
-
 ;-------------- Persis ---------------
-faction	persis, eastern
-denari	9492
+faction	persis, eastern_passive
+denari	9090
 settlement
 {
 	level huge_city
 	region Persepolis_R
 
 	year_founded 0
-	population 8711
+	population 8611
 	plan_set default_set
 	faction_creator persis
 	building
@@ -46087,10 +46062,6 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	building
 	{
 		type core_building governors_house
@@ -46112,9 +46083,6 @@ settlement
 	faction_creator persis
 	garrisoned_army
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46148,12 +46116,6 @@ settlement
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46341,7 +46303,7 @@ settlement
 	region Barna_R
 
 	year_founded 0
-	population 600
+	population 400
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46377,7 +46339,7 @@ settlement
 	region Bagisara_R
 
 	year_founded 0
-	population 585
+	population 400
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46385,7 +46347,6 @@ settlement
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	unit	east infantry		exp 3 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46449,7 +46410,7 @@ settlement
 	region Pura_R
 
 	year_founded 0
-	population 1000
+	population 900
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46482,12 +46443,11 @@ settlement
 }
 
 ;	Tisa_R
-character	Satres of Gedrosia, named character, leader, age 37, , x 625, y 230
+character	Satres of Gedrosia, named character, leader, age 37, , x 711, y 193
 traits GoodCommander 5, GoodAdministrator 4, Warlord 4, NaturalMilitarySkill 3
 army
 unit		east generals cavalry early		exp 9 armour 3 weapon_lvl 3
 unit		east generals cavalry early		exp 6 armour 2 weapon_lvl 3
-unit		east infantry				exp 6 armour 0 weapon_lvl 1
 unit		east infantry				exp 3 armour 0 weapon_lvl 0
 unit		east infantry				exp 3 armour 0 weapon_lvl 0
 unit		east infantry				exp 3 armour 0 weapon_lvl 0
@@ -46495,13 +46455,9 @@ unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 2 armour 0 weapon_lvl 0
-unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 0 armour 0 weapon_lvl 0
 unit		east infantry				exp 0 armour 0 weapon_lvl 0
-unit		east infantry				exp 0 armour 0 weapon_lvl 0
-unit		east infantry				exp 0 armour 0 weapon_lvl 0
-unit		east infantry				exp 0 armour 0 weapon_lvl 0
-unit		east archer					exp 4 armour 0 weapon_lvl 1
+unit		east archer					exp 3 armour 0 weapon_lvl 1
 unit		east archer					exp 4 armour 0 weapon_lvl 1
 
 character_record		Arxa, 	female, command 0, influence 0, management 0, subterfuge 0, age 37, alive, never_a_leader
@@ -46509,6 +46465,218 @@ character_record		Narai of Gedrosia, 	male, command 6, influence 5, management 8
 character_record		Orontobates of Gedrosia, 	male, command 6, influence 9, management 3, subterfuge 0, age 14, alive, never_a_leader
 
 relative 	Satres of Gedrosia, 	Arxa,		Narai of Gedrosia,	    Orontobates of Gedrosia,	end
+
+;-------------- Antiochea Taocene ---------------
+faction	antiochea_taocene, greek_passive
+ai_do_not_attack_faction seleucid
+ai_do_not_attack_faction bactria
+denari	9615
+settlement
+{
+	level town
+	region Dayya_R
+
+	year_founded 0
+	population 1095
+	plan_set default_set
+	faction_creator antiochea_taocene
+	building
+	{
+		type hinterland_greek_polis greek_polis
+	}
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type equestrian stables
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_roads roads
+	}
+}
+settlement
+{
+	level town
+	region Bushahr_R
+
+	year_founded 0
+	population 310
+	plan_set default_set
+	faction_creator antiochea_taocene
+	garrisoned_army
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	east infantry		exp 3 armour 0 weapon_lvl 0
+	unit	east infantry		exp 3 armour 0 weapon_lvl 0
+	unit	east infantry		exp 3 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	east archer		exp 4 armour 0 weapon_lvl 3
+	unit	east archer		exp 4 armour 0 weapon_lvl 3
+	building
+	{
+		type hinterland_greek_klerouchia greek_klerouchia
+	}
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+settlement
+{
+	level town
+	region Fariyah_R
+
+	year_founded 0
+	population 510
+	plan_set default_set
+	faction_creator antiochea_taocene
+	garrisoned_army
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
+	unit	east infantry		exp 2 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type hinterland_greek_klerouchia greek_klerouchia
+	}
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+settlement
+{
+	level town
+	region Abdun_Taocene_R
+
+	year_founded 0
+	population 310
+	plan_set default_set
+	faction_creator antiochea_taocene
+	garrisoned_army
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	greek hoplite		exp 2 armour 2 weapon_lvl 3
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 1 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type hinterland_greek_klerouchia greek_klerouchia
+	}
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+settlement
+{
+	level town
+	region Parsha_R
+
+	year_founded 0
+	population 301
+	plan_set default_set
+	faction_creator antiochea_taocene
+	garrisoned_army
+	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type hinterland_greek_klerouchia greek_klerouchia
+	}
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+;	Dayya_R
+character	Adamanthaleus of Epardus, named character, leader, age 36, , x 625, y 230
+traits GoodCommander 5, GoodAdministrator 4, Warlord 4, NaturalMilitarySkill 4, GoodAttacker 3, GoodRiskyAttacker 2, GoodMiner 2
+army
+unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
+unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
+unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
+unit		greek medium cavalry		exp 8 armour 2 weapon_lvl 3
+unit		greek hoplite		exp 5 armour 2 weapon_lvl 3
+unit		taoceneian irregulars		exp 9 armour 2 weapon_lvl 2
+unit		taoceneian irregulars		exp 8 armour 1 weapon_lvl 2
+unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 2
+unit		taoceneian irregulars		exp 5 armour 1 weapon_lvl 2
+unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 5 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
+unit		taoceneian irregulars		exp 3 armour 0 weapon_lvl 1
+unit		east archer		exp 8 armour 2 weapon_lvl 3
+unit		east archer		exp 8 armour 1 weapon_lvl 3
+
+character_record		Arxa, 	female, command 0, influence 0, management 0, subterfuge 0, age 36, alive, never_a_leader
+character_record		Herakles of Epardus, 	male, command 9, influence 9, management 9, subterfuge 9, age 15, alive, never_a_leader
+character_record		Synges of Epardus, 	male, command 0, influence 4, management 3, subterfuge 1, age 14, alive, never_a_leader
+
+relative 	Adamanthaleus of Epardus, 	Arxa,		Herakles of Epardus,	    Synges of Epardus,	end
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;                 NEW FACTIONS END                 ;;;;;;;;;;
@@ -46521,7 +46689,7 @@ relative 	Satres of Gedrosia, 	Arxa,		Narai of Gedrosia,	    Orontobates of Gedr
 
 faction	corinth, greek_passive
 dead_until_resurrected
-denari	-7000
+denari	-9000
 ;;character	Oenomaus Bacchides, named character, leader, age 38, , x 227, y 202 ;;coords outdated
 ;;traits GoodCommander 2, GoodAdministrator 2
 ;;army
@@ -46540,7 +46708,7 @@ denari	3000
 
 faction	thessaly, greek_passive
 dead_until_resurrected
-denari	2300
+denari	-2100
 
 faction	akragas, greek_passive
 dead_until_resurrected
@@ -46773,7 +46941,7 @@ settlement
 	region Narmadapura_R
 
 	year_founded 0
-	population 370
+	population 340
 	plan_set default_set
 	faction_creator india
 	garrisoned_army
@@ -46795,10 +46963,33 @@ settlement
 settlement
 {
 	level town
+	region Podanapura_R
+
+	year_founded 0
+	population 310
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+
+settlement
+{
+	level town
 	region Viduranagara_R
 
 	year_founded 0
-	population 390
+	population 350
 	plan_set default_set
 	faction_creator india
 	garrisoned_army
@@ -53986,6 +54177,7 @@ core_attitudes	egypt,			600		seleucid
 core_attitudes	seleucid,		0		cappadocia
 core_attitudes	seleucid,		0		pergamon
 core_attitudes	seleucid,		0		bactria
+core_attitudes	seleucid,		0		antiochea_taocene
 core_attitudes	seleucid,		0		india
 core_attitudes	seleucid,		600		egypt
 core_attitudes	carthage,		0		iolei
@@ -54077,6 +54269,7 @@ core_attitudes	pergamon,		0		slave
 core_attitudes	bosporus,		0		athens
 core_attitudes	arcadia,		0		macedon
 core_attitudes	bactria,		0		seleucid
+core_attitudes	antiochea_taocene,		0		seleucid
 core_attitudes	massylii,		0		carthage
 core_attitudes	harii,			0		helisii
 core_attitudes	harii,			0		helveconae
@@ -54127,6 +54320,7 @@ core_attitudes	saxons,			600		slave
 core_attitudes	ardiaei,		600		slave
 core_attitudes	athens,			600		slave
 core_attitudes	bactria,		600		slave
+core_attitudes	antiochea_taocene,		600		slave
 core_attitudes	boii,			600		slave
 core_attitudes	bosporus,		600		slave
 core_attitudes	caledonia,		600		slave
@@ -54359,7 +54553,7 @@ core_attitudes	kashgar,		600		slave
 core_attitudes	ferghana,		600		slave
 core_attitudes	teion,			600		slave
 core_attitudes	troezen,		600		slave
-core_attitudes	slave,			600		romans_julii, romans_brutii, romans_scipii, romans_senate, egypt, seleucid, carthage, parthia, gauls, germans, britons, greek_cities, macedon, pontus, armenia, dacia, numidia, scythia, spain, thrace, saxons, ardiaei, athens, bactria, boii, bosporus, caledonia, celtiberia, colchis, epirus, galatia, kush, marcomanni, massagetae, massalia, nabataea, nervii, pergamon, saba, syracuse, tylis, veneti, anuradhapura, chola, alemanni, burgundii, franks, goths, huns, lombardi, ostrogoths, roxolani, sarmatians, slavs, vandals, persia, acarnania, achea, aedui, aestii, aetolia, agathyrsi, agyrion, akragas, albania, allobroges, anartes, anglii, aorsi, apuli, arcadia, argos, etruscans, astures, atrebates, atropatene, axum, balari, bastarnae, bastetani, belgae, bellovaci, bithynia, bituriges, blemmyes, boetia, breuci, brigantes, bructeri, brutii, budini, buri, byzantion, cadurci, cantabri, cantiaci, cappadocia, carni, carnutes, carpetani, catuvellauni, cavari, celtici, cenomanni, cessetani, chamavi, chauci, chera, cherusci, chorasmia, cimbri, corieltauvi, corinth, corsi, italiotes, cyprus, cyrene, daesitiates, dahae, daorsi, dardania, daunians, delmatae, demetae, dumnonii, eblani, eburones, edetani, elis, elusates, emporion, eravisci, fosi, frisii, gaetuli, gallaeci, garamantes, gerrha, gortyn, hadhramaut, harii, helisii, helveconae, helvetii, heraclea, hermunduri, heruli, histri, iazyges, iberia, ilercavones, ilergetes, illyria, india, insubres, iolei, juti, knossos, kydonia, lemovices, leponti, lexovii, libya, ligures, lihyan, lingones, lucani, mamertines, mandubii, mascat, massylii, mauri, mediomatrici, melos, messapians, messene, minaea, morini, nahanarvali, namnetes, nasamones, neapolis, nemetes, nori, oretani, osismii, paeligni, paeonia, palmyra, pandya, paphlagonia, parisii, peucitans, picentes, pictones, qataban, qedar, quadi, raeti, redones, remi, rhodes, rugii, ruteni, sabines, saka, samnites, santones, scordisci, segusiavi, senones, sequani, sinope, siraces, suessiones, sugambri, suiones, taras, tarbelli, taurini, tencteri, thessaly, thyssagetae, treverii, triballi, turdetani, turones, ubii, umbri, unelli, vaccaei, vangiones, varini, vascones, venedi, veneti_gaul, vettones, vindelici, vivisci, vocontii, volcae, volsci, bessi, caeni, krobyzi, biephi, buridenses, thamud, ay, athiyaman, kalinga, kucha, kashgar, teion, troezen, ferghana
+core_attitudes	slave,			600		romans_julii, romans_brutii, romans_scipii, romans_senate, egypt, seleucid, carthage, parthia, gauls, germans, britons, greek_cities, macedon, pontus, armenia, dacia, numidia, scythia, spain, thrace, saxons, ardiaei, athens, antiochea_taocene, bactria, boii, bosporus, caledonia, celtiberia, colchis, epirus, galatia, kush, marcomanni, massagetae, massalia, nabataea, nervii, pergamon, saba, syracuse, tylis, veneti, anuradhapura, chola, alemanni, burgundii, franks, goths, huns, lombardi, ostrogoths, roxolani, sarmatians, slavs, vandals, persia, acarnania, achea, aedui, aestii, aetolia, agathyrsi, agyrion, akragas, albania, allobroges, anartes, anglii, aorsi, apuli, arcadia, argos, etruscans, astures, atrebates, atropatene, axum, balari, bastarnae, bastetani, belgae, bellovaci, bithynia, bituriges, blemmyes, boetia, breuci, brigantes, bructeri, brutii, budini, buri, byzantion, cadurci, cantabri, cantiaci, cappadocia, carni, carnutes, carpetani, catuvellauni, cavari, celtici, cenomanni, cessetani, chamavi, chauci, chera, cherusci, chorasmia, cimbri, corieltauvi, corinth, corsi, italiotes, cyprus, cyrene, daesitiates, dahae, daorsi, dardania, daunians, delmatae, demetae, dumnonii, eblani, eburones, edetani, elis, elusates, emporion, eravisci, fosi, frisii, gaetuli, gallaeci, garamantes, gerrha, gortyn, hadhramaut, harii, helisii, helveconae, helvetii, heraclea, hermunduri, heruli, histri, iazyges, iberia, ilercavones, ilergetes, illyria, india, insubres, iolei, juti, knossos, kydonia, lemovices, leponti, lexovii, libya, ligures, lihyan, lingones, lucani, mamertines, mandubii, mascat, massylii, mauri, mediomatrici, melos, messapians, messene, minaea, morini, nahanarvali, namnetes, nasamones, neapolis, nemetes, nori, oretani, osismii, paeligni, paeonia, palmyra, pandya, paphlagonia, parisii, peucitans, picentes, pictones, qataban, qedar, quadi, raeti, redones, remi, rhodes, rugii, ruteni, sabines, saka, samnites, santones, scordisci, segusiavi, senones, sequani, sinope, siraces, suessiones, sugambri, suiones, taras, tarbelli, taurini, tencteri, thessaly, thyssagetae, treverii, triballi, turdetani, turones, ubii, umbri, unelli, vaccaei, vangiones, varini, vascones, venedi, veneti_gaul, vettones, vindelici, vivisci, vocontii, volcae, volsci, bessi, caeni, krobyzi, biephi, buridenses, thamud, ay, athiyaman, kalinga, kucha, kashgar, teion, troezen, ferghana
 
 ;-------------- #$b Faction Relations ---------------
 
@@ -54403,6 +54597,7 @@ faction_relationships	egypt,			600		seleucid
 faction_relationships	seleucid,		100		cappadocia
 faction_relationships	seleucid,		100		pergamon
 faction_relationships	seleucid,		100		bactria
+faction_relationships	seleucid,		100		antiochea_taocene
 faction_relationships	seleucid,		100		india
 faction_relationships	seleucid,		600		egypt
 faction_relationships	carthage,		100		iolei
@@ -54494,6 +54689,7 @@ faction_relationships	pergamon,		100		slave
 faction_relationships	bosporus,		100		athens
 faction_relationships	arcadia,		100		macedon
 faction_relationships	bactria,		100		seleucid
+faction_relationships	antiochea_taocene,		100		seleucid
 faction_relationships	massylii,		100		carthage
 faction_relationships	harii,			100		helisii
 faction_relationships	harii,			100		helveconae
@@ -54544,6 +54740,7 @@ faction_relationships	saxons,			600		slave
 faction_relationships	ardiaei,		600		slave
 faction_relationships	athens,			600		slave
 faction_relationships	bactria,		600		slave
+faction_relationships	antiochea_taocene,		600		slave
 faction_relationships	boii,			600		slave
 faction_relationships	bosporus,		600		slave
 faction_relationships	caledonia,		600		slave
@@ -54776,7 +54973,7 @@ faction_relationships	kashgar,		600		slave
 faction_relationships	ferghana,		600		slave
 faction_relationships	teion,			600		slave
 faction_relationships	troezen,		600		slave
-faction_relationships	slave,			600		romans_julii, romans_brutii, romans_scipii, romans_senate, egypt, seleucid, carthage, parthia, gauls, germans, britons, greek_cities, macedon, pontus, armenia, dacia, numidia, scythia, spain, thrace, saxons, ardiaei, athens, bactria, boii, bosporus, caledonia, celtiberia, colchis, epirus, galatia, kush, marcomanni, massagetae, massalia, nabataea, nervii, pergamon, saba, syracuse, tylis, veneti, anuradhapura, chola, alemanni, burgundii, franks, goths, huns, lombardi, ostrogoths, roxolani, sarmatians, slavs, vandals, persia, acarnania, achea, aedui, aestii, aetolia, agathyrsi, agyrion, akragas, albania, allobroges, anartes, anglii, aorsi, apuli, arcadia, argos, etruscans, astures, atrebates, atropatene, axum, balari, bastarnae, bastetani, belgae, bellovaci, bithynia, bituriges, blemmyes, boetia, breuci, brigantes, bructeri, brutii, budini, buri, byzantion, cadurci, cantabri, cantiaci, cappadocia, carni, carnutes, carpetani, catuvellauni, cavari, celtici, cenomanni, cessetani, chamavi, chauci, chera, cherusci, chorasmia, cimbri, corieltauvi, corinth, corsi, italiotes, cyprus, cyrene, daesitiates, dahae, daorsi, dardania, daunians, delmatae, demetae, dumnonii, eblani, eburones, edetani, elis, elusates, emporion, eravisci, fosi, frisii, gaetuli, gallaeci, garamantes, gerrha, gortyn, hadhramaut, harii, helisii, helveconae, helvetii, heraclea, hermunduri, heruli, histri, iazyges, iberia, ilercavones, ilergetes, illyria, india, insubres, iolei, juti, knossos, kydonia, lemovices, leponti, lexovii, libya, ligures, lihyan, lingones, lucani, mamertines, mandubii, mascat, massylii, mauri, mediomatrici, melos, messapians, messene, minaea, morini, nahanarvali, namnetes, nasamones, neapolis, nemetes, nori, oretani, osismii, paeligni, paeonia, palmyra, pandya, paphlagonia, parisii, peucitans, picentes, pictones, qataban, qedar, quadi, raeti, redones, remi, rhodes, rugii, ruteni, sabines, saka, samnites, santones, scordisci, segusiavi, senones, sequani, sinope, siraces, suessiones, sugambri, suiones, taras, tarbelli, taurini, tencteri, thessaly, thyssagetae, treverii, triballi, turdetani, turones, ubii, umbri, unelli, vaccaei, vangiones, varini, vascones, venedi, veneti_gaul, vettones, vindelici, vivisci, vocontii, volcae, volsci, bessi, caeni, krobyzi, biephi, buridenses, thamud, ay, athiyaman, kalinga, kucha, kashgar, teion, troezen, ferghana
+faction_relationships	slave,			600		romans_julii, romans_brutii, romans_scipii, romans_senate, egypt, seleucid, carthage, parthia, gauls, germans, britons, greek_cities, macedon, pontus, armenia, dacia, numidia, scythia, spain, thrace, saxons, ardiaei, athens, antiochea_taocene, bactria, boii, bosporus, caledonia, celtiberia, colchis, epirus, galatia, kush, marcomanni, massagetae, massalia, nabataea, nervii, pergamon, saba, syracuse, tylis, veneti, anuradhapura, chola, alemanni, burgundii, franks, goths, huns, lombardi, ostrogoths, roxolani, sarmatians, slavs, vandals, persia, acarnania, achea, aedui, aestii, aetolia, agathyrsi, agyrion, akragas, albania, allobroges, anartes, anglii, aorsi, apuli, arcadia, argos, etruscans, astures, atrebates, atropatene, axum, balari, bastarnae, bastetani, belgae, bellovaci, bithynia, bituriges, blemmyes, boetia, breuci, brigantes, bructeri, brutii, budini, buri, byzantion, cadurci, cantabri, cantiaci, cappadocia, carni, carnutes, carpetani, catuvellauni, cavari, celtici, cenomanni, cessetani, chamavi, chauci, chera, cherusci, chorasmia, cimbri, corieltauvi, corinth, corsi, italiotes, cyprus, cyrene, daesitiates, dahae, daorsi, dardania, daunians, delmatae, demetae, dumnonii, eblani, eburones, edetani, elis, elusates, emporion, eravisci, fosi, frisii, gaetuli, gallaeci, garamantes, gerrha, gortyn, hadhramaut, harii, helisii, helveconae, helvetii, heraclea, hermunduri, heruli, histri, iazyges, iberia, ilercavones, ilergetes, illyria, india, insubres, iolei, juti, knossos, kydonia, lemovices, leponti, lexovii, libya, ligures, lihyan, lingones, lucani, mamertines, mandubii, mascat, massylii, mauri, mediomatrici, melos, messapians, messene, minaea, morini, nahanarvali, namnetes, nasamones, neapolis, nemetes, nori, oretani, osismii, paeligni, paeonia, palmyra, pandya, paphlagonia, parisii, peucitans, picentes, pictones, qataban, qedar, quadi, raeti, redones, remi, rhodes, rugii, ruteni, sabines, saka, samnites, santones, scordisci, segusiavi, senones, sequani, sinope, siraces, suessiones, sugambri, suiones, taras, tarbelli, taurini, tencteri, thessaly, thyssagetae, treverii, triballi, turdetani, turones, ubii, umbri, unelli, vaccaei, vangiones, varini, vascones, venedi, veneti_gaul, vettones, vindelici, vivisci, vocontii, volcae, volsci, bessi, caeni, krobyzi, biephi, buridenses, thamud, ay, athiyaman, kalinga, kucha, kashgar, teion, troezen, ferghana
 
 ;-------------- #$c Faction Aggression ---------------
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

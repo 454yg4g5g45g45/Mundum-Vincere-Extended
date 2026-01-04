@@ -14618,4 +14618,31 @@
 		],
 	},
 
+	;;antiochea_taocene
+
+	"antiochea_taocene_men":
+	{
+		;;pull from these namelists,
+		"inherit": "greek_men",
+		"inherit": "parthia_men",
+
+		"names":
+		[
+			"Adamanthaleus",
+		],
+	},
+
+	"antiochea_taocene_surnames":
+	{
+		;;pull from these namelists,
+		"inherit": "greek_surnames",
+		"inherit": "parthia_surnames",
+
+		"names":
+		[
+			"Adamanthaleidae",
+			"Sotereidae",
+		],
+	},
+
 ],

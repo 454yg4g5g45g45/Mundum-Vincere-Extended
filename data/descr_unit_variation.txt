@@ -12522,6 +12522,86 @@ region
 			distribution 100
 		}
 	}
+	Bushahr_R
+	{
+		variant
+		{
+			ethnicity arabic
+			distribution 100
+		}
+	}
+	Dayya_R
+	{
+		variant
+		{
+			ethnicity arabic
+			distribution 70
+		}
+		variant
+		{
+			ethnicity mediterranean
+			distribution 20
+		}
+		variant
+		{
+			ethnicity indian
+			distribution 10
+		}
+	}
+	Fariyah_R
+	{
+		variant
+		{
+			ethnicity arabic
+			distribution 70
+		}
+		variant
+		{
+			ethnicity mediterranean
+			distribution 20
+		}
+		variant
+		{
+			ethnicity indian
+			distribution 10
+		}
+	}
+	Abdun_Taocene_R
+	{
+		variant
+		{
+			ethnicity arabic
+			distribution 70
+		}
+		variant
+		{
+			ethnicity mediterranean
+			distribution 25
+		}
+		variant
+		{
+			ethnicity indian
+			distribution 5
+		}
+	}
+	Parsha_R
+	{
+		variant
+		{
+			ethnicity arabic
+			distribution 60
+		}
+		variant
+		{
+			ethnicity mediterranean
+			distribution 30
+		}
+		variant
+		{
+			ethnicity indian
+			distribution 10
+		}
+	}
 	Syringis_R
 	{
 		variant

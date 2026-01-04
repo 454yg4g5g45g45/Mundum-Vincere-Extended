@@ -1297,6 +1297,12 @@ strat_model		sm_greek_general
 battle_model	greek_general
 battle_equip	gladius, chainmail shirt helmet and rectangular shield
 
+faction			antiochea_taocene
+dictionary		2
+strat_model		sm_greek_general
+battle_model	greek_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
 faction			ardiaei
 dictionary		2
 strat_model		sm_greek_general
@@ -3066,6 +3072,13 @@ strat_model		sm_greek_lesser_general
 battle_model	greek_lesser_general
 battle_equip	gladius, chainmail shirt helmet and rectangular shield
 
+faction			antiochea_taocene
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		sm_greek_lesser_general
+battle_model	greek_lesser_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
 faction			ardiaei
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_general_celt.tga
@@ -4658,6 +4671,11 @@ dictionary		2
 strat_card		data/ui/roman/agents/card_spy.tga
 strat_model		spy_greek
 
+faction			antiochea_taocene
+dictionary		2
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy_greek
+
 faction			ardiaei
 dictionary		2
 strat_card		data/ui/roman/agents/card_spy.tga
@@ -5931,6 +5949,11 @@ strat_card		data/ui/roman/agents/card_assassin.tga
 strat_model		assassin_greek
 
 faction			troezen
+dictionary		2
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin_greek
+
+faction			antiochea_taocene
 dictionary		2
 strat_card		data/ui/roman/agents/card_assassin.tga
 strat_model		assassin_greek
@@ -7255,6 +7278,11 @@ strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		diplomat_greek
 
 faction			troezen
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		diplomat_greek
+
+faction			antiochea_taocene
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		diplomat_greek
@@ -8626,6 +8654,11 @@ dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
 strat_model		merchant_greek
 
+faction			antiochea_taocene
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
+strat_model		merchant_greek
+
 faction			ardiaei
 dictionary		2
 strat_card		data/ui/barbarian/agents/card_diplo_barb.tga
@@ -9791,6 +9824,11 @@ strat_card		data/ui/greek/agents/temp_admiral.tga
 strat_model		greek_cities_admiral
 
 faction			troezen
+dictionary		2
+strat_card		data/ui/greek/agents/temp_admiral.tga
+strat_model		greek_cities_admiral
+
+faction			antiochea_taocene
 dictionary		2
 strat_card		data/ui/greek/agents/temp_admiral.tga
 strat_model		greek_cities_admiral

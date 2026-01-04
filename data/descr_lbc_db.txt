@@ -838,6 +838,10 @@ faction teion
 model eastern_male_peasant		40
 model east_female_peasant		60
 
+faction antiochea_taocene
+model eastern_male_peasant		40
+model east_female_peasant		60
+
 faction pergamon
 model roman_peasant				40
 model greek_female_peasant		60
