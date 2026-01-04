@@ -4713,7 +4713,7 @@ building hinterland_greek_polis
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -86550 requires factions { slave, }
+				taxable_income_bonus bonus -96550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				law_bonus bonus 7

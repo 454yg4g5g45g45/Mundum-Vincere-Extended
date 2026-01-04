@@ -46243,11 +46243,6 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	building
 	{
 		type core_building governors_house
@@ -46296,7 +46291,7 @@ settlement
 	region Fannazbur_R
 
 	year_founded 0
-	population 1000
+	population 600
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46334,7 +46329,7 @@ settlement
 	region Pura_R
 
 	year_founded 0
-	population 900
+	population 400
 	plan_set default_set
 	faction_creator gedrosia
 	garrisoned_army
@@ -46381,7 +46376,6 @@ unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 2 armour 0 weapon_lvl 0
 unit		east infantry				exp 0 armour 0 weapon_lvl 0
 unit		east infantry				exp 0 armour 0 weapon_lvl 0
-unit		east archer					exp 3 armour 0 weapon_lvl 1
 unit		east archer					exp 4 armour 0 weapon_lvl 1
 
 character_record		Arxa, 	female, command 0, influence 0, management 0, subterfuge 0, age 37, alive, never_a_leader
@@ -46394,7 +46388,7 @@ relative 	Satres of Gedrosia, 	Arxa,		Narai of Gedrosia,	    Orontobates of Gedr
 faction	antiochea_taocene, greek_passive
 ai_do_not_attack_faction seleucid
 ai_do_not_attack_faction bactria
-denari	9825
+denari	9925
 settlement
 {
 	level town
@@ -46466,7 +46460,7 @@ settlement
 	region Fariyah_R
 
 	year_founded 0
-	population 320
+	population 310
 	plan_set default_set
 	faction_creator antiochea_taocene
 	garrisoned_army
@@ -46475,6 +46469,7 @@ settlement
 	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
 	unit	greek hoplite		exp 5 armour 2 weapon_lvl 3
 	unit	east infantry		exp 2 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46526,6 +46521,7 @@ settlement
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	greek medium cavalry	exp 8 armour 2 weapon_lvl 3
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -46572,6 +46568,7 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
@@ -46598,7 +46595,7 @@ unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
 unit		greek general's guard cavalry early		exp 9 armour 3 weapon_lvl 3
 unit		greek medium cavalry		exp 8 armour 2 weapon_lvl 3
 unit		greek medium cavalry		exp 8 armour 2 weapon_lvl 3
-unit		greek hoplite		exp 5 armour 2 weapon_lvl 3
+unit		greek hoplite		exp 7 armour 2 weapon_lvl 3
 unit		taoceneian irregulars		exp 9 armour 2 weapon_lvl 2
 unit		taoceneian irregulars		exp 8 armour 1 weapon_lvl 2
 unit		taoceneian irregulars		exp 7 armour 1 weapon_lvl 3
