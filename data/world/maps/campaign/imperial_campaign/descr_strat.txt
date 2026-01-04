@@ -41109,24 +41109,6 @@ settlement
 }
 settlement
 {
-	level town
-	region Vatsagulma_R
-
-	year_founded 0
-	population 1200
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
 	level city
 	region Pratishthana_R
 
@@ -41167,7 +41149,7 @@ settlement
 	region Souannagoura_R
 
 	year_founded 0
-	population 600
+	population 400
 	plan_set default_set
 	faction_creator india
 	building
@@ -41185,7 +41167,7 @@ settlement
 	region Sabbinadu_R
 
 	year_founded 0
-	population 1400
+	population 300
 	plan_set default_set
 	faction_creator india
 	building
@@ -42559,16 +42541,6 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
 ;	Pratishthana
 character	Taharqa, general, age 20, , x 873, y 163
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Vatsagulma
-character	Taharqa, general, age 20, , x 889, y 173
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Souannagoura
-character	Taharqa, general, age 20, , x 984, y 260
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
@@ -47057,6 +47029,27 @@ settlement
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+
+settlement
+{
+	level town
+	region Vatsagulma_R
+
+	year_founded 0
+	population 300
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
+	unit	east infantry		exp 3 armour 0 weapon_lvl 0
 	building
 	{
 		type core_building governors_house
