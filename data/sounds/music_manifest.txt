@@ -8,10 +8,6 @@
 
 "data/sounds/music/ebtheme.opus"
 
-"data/sounds/music/batw_title_1.opus"
-
-"data/sounds/music/batw_title_2.opus"
-
 "data/sounds/music/(tyler_c_e_battle)_kadesh.opus"
 
 "data/sounds/music/(tyler_c_e_battle)_the_fall_of_carthage.opus"
