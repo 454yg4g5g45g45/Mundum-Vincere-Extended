@@ -2,9 +2,3 @@
 
 # Binary mod assets
 *.psd filter=lfs diff=lfs merge=lfs -text
-*.pos filter=lfs diff=lfs merge=lfs -text
-*.cas filter=lfs diff=lfs merge=lfs -text
-*.idx filter=lfs diff=lfs merge=lfs -text
-*.pack filter=lfs diff=lfs merge=lfs -text
-*.feral filter=lfs diff=lfs merge=lfs -text
-*.dat filter=lfs diff=lfs merge=lfs -text
