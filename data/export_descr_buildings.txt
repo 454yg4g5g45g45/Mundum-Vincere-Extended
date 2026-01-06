@@ -2603,7 +2603,7 @@ building core_building
 			capability
 			{
 				taxable_income_bonus bonus -1 requires factions { all, }
-				taxable_income_bonus bonus -86550 requires factions { slave, }
+				taxable_income_bonus bonus -96550 requires factions { slave, }
 				taxable_income_bonus bonus 6
 				trade_base_income_bonus bonus 1
 				recruit "barb peasant briton"  0
@@ -2912,7 +2912,7 @@ building core_building
 				population_growth_bonus bonus 5 requires roman_faction and is_player and not roman_has_gov
 			}
 			construction  6 
-			cost  19500 
+			cost  19800 
 			settlement_min large_town
 			upgrades
 			{
@@ -3283,7 +3283,7 @@ building core_building
 				population_growth_bonus bonus 5 requires roman_faction and is_player and not roman_has_gov
 			}
 			construction  8 
-			cost  33000 
+			cost  36500 
 			settlement_min city
 			upgrades
 			{
@@ -3295,7 +3295,7 @@ building core_building
 			capability
 			{
 				taxable_income_bonus bonus -4 requires factions { all, }
-				taxable_income_bonus bonus -9956550 requires factions { slave, }
+				taxable_income_bonus bonus -9976550 requires factions { slave, }
 				taxable_income_bonus bonus 7
 				trade_base_income_bonus bonus 1
 				recruit "barb peasant briton"  0
@@ -3313,8 +3313,6 @@ building core_building
 				;;danymok expansion
 				recruit "arab peasant"  0
 				recruit "helots"  0
-				
-				
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;unit rework;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3333,8 +3331,6 @@ building core_building
 				
 				;;;;;;;;;;;   greek    ;;;;;;;;;;;;
 				recruit "greek peasant"  0  requires antigonid or not macedon_faction
-				
-				
 				
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;recruitable generals;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -3439,7 +3435,6 @@ building core_building
 				recruit "spartan royal guard"  1  requires not marian and militia_barracks_present and academy_present
 				recruit "spartan royal guard cavalry"  1  requires marian and militia_barracks_present and academy_present
 				
-				
 				;;;;;;;;;;;   recruitable generals (exp upgrade 2)    ;;;;;;;;;;;;
 				recruit "barb chieftain cavalry early dacian"  2  requires not marian and militia_barracks_present and scriptorium_present
 				recruit "barb chieftain cavalry early gaul"  2  requires not marian and militia_barracks_present and scriptorium_present
@@ -3543,8 +3538,6 @@ building core_building
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;unit rework end;;;;;;;;;;;;;;;;;;;;
 				;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-				
-				
 				
 				
 				;;agents
@@ -3711,7 +3704,7 @@ building core_building
 				law_bonus bonus -15 requires roman_faction and is_player and not roman_has_gov
 				population_growth_bonus bonus 5 requires roman_faction and is_player and not roman_has_gov
 			}
-			construction  10 
+			construction  12 
 			cost  64000 
 			settlement_min large_city
 			upgrades

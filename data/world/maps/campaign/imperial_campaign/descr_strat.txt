@@ -41023,25 +41023,7 @@ settlement
 	region Asigramma_R
 
 	year_founded 0
-	population 1000
-	plan_set default_set
-	faction_creator india
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-}
-settlement
-{
-	level town
-	region Isila_R
-
-	year_founded 0
-	population 1000
+	population 300
 	plan_set default_set
 	faction_creator india
 	building
@@ -42501,11 +42483,6 @@ unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
 ;	Than
 character	Taharqa, general, age 20, , x 822, y 185
-army
-unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
-
-;	Isila
-character	Taharqa, general, age 20, , x 899, y 117
 army
 unit		Indian Spearmen				exp 0 armour 0 weapon_lvl 0
 
@@ -46655,7 +46632,7 @@ settlement
 	region Artoarta_R
 
 	year_founded 0
-	population 500
+	population 300
 	plan_set default_set
 	faction_creator india
 	building
@@ -46673,7 +46650,7 @@ settlement
 	region Auzacia_R
 
 	year_founded 0
-	population 609
+	population 350
 	plan_set default_set
 	faction_creator saka
 	building
@@ -46691,7 +46668,7 @@ settlement
 	region Baharak_R
 
 	year_founded 0
-	population 510
+	population 400
 	plan_set default_set
 	faction_creator ferghana
 	building
@@ -46709,7 +46686,7 @@ settlement
 	region Nur_R
 
 	year_founded 0
-	population 400
+	population 300
 	plan_set default_set
 	faction_creator chorasmia
 	building
@@ -46764,6 +46741,26 @@ settlement
 
 	year_founded 0
 	population 300
+	plan_set default_set
+	faction_creator india
+	garrisoned_army
+	unit	east infantry		exp 0 armour 0 weapon_lvl 0
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+}
+settlement
+{
+	level town
+	region Isila_R
+
+	year_founded 0
+	population 305
 	plan_set default_set
 	faction_creator india
 	garrisoned_army
@@ -47028,7 +47025,6 @@ settlement
 	garrisoned_army
 	unit	east infantry		exp 1 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	building
 	{
 		type core_building governors_house
@@ -47070,11 +47066,6 @@ settlement
 	plan_set default_set
 	faction_creator axum
 	garrisoned_army
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -47177,7 +47168,6 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	building
 	{
 		type core_building governors_house
@@ -47254,10 +47244,6 @@ settlement
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	greek hoplite militia		exp 0 armour 0 weapon_lvl 0
 	unit	east archer		exp 0 armour 0 weapon_lvl 0
@@ -47278,7 +47264,7 @@ settlement
 	region Latake_Psyllia_R
 
 	year_founded 0
-	population 305
+	population 300
 	plan_set default_set
 	faction_creator numidia
 	garrisoned_army
@@ -47315,7 +47301,7 @@ settlement
 	region Harawa_Psyllia_R
 
 	year_founded 0
-	population 303
+	population 301
 	plan_set default_set
 	faction_creator numidia
 	garrisoned_army
@@ -47351,12 +47337,10 @@ settlement
 	region Iasinos_Pysllia_R
 
 	year_founded 0
-	population 307
+	population 300
 	plan_set default_set
 	faction_creator numidia
 	garrisoned_army
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
-	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
 	unit	east infantry		exp 0 armour 0 weapon_lvl 0
@@ -47388,7 +47372,7 @@ settlement
 	region Tashkurghan_R
 
 	year_founded 0
-	population 1100
+	population 450
 	plan_set default_set
 	faction_creator kashgar
 	building
@@ -47406,7 +47390,7 @@ settlement
 	region TektosakaKome_R
 
 	year_founded 0
-	population 500
+	population 310
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47420,7 +47404,7 @@ settlement
 	region Varakhsha_R
 
 	year_founded 0
-	population 870
+	population 340
 	plan_set default_set
 	faction_creator chorasmia
 	building
@@ -47440,7 +47424,7 @@ settlement
 	region Astana_R
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47458,7 +47442,7 @@ settlement
 	region Jumi_R
 
 	year_founded 0
-	population 890
+	population 450
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47476,7 +47460,7 @@ settlement
 	region Pulei_R
 
 	year_founded 0
-	population 1000
+	population 350
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47494,7 +47478,7 @@ settlement
 	region Cumuda_R
 
 	year_founded 0
-	population 1100
+	population 400
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47512,7 +47496,7 @@ settlement
 	region Dunhuang_R
 
 	year_founded 0
-	population 1800
+	population 1050
 	plan_set default_set
 	faction_creator aorsi
 	building
@@ -47530,7 +47514,7 @@ settlement
 	region Guqung_R
 
 	year_founded 0
-	population 1000
+	population 400
 	plan_set default_set
 	faction_creator saka
 	building
@@ -47548,7 +47532,7 @@ settlement
 	region Karadong_R
 
 	year_founded 0
-	population 600
+	population 300
 	plan_set default_set
 	faction_creator kashgar
 	building
@@ -47566,7 +47550,7 @@ settlement
 	region Karasahr_R
 
 	year_founded 0
-	population 1200
+	population 1100
 	plan_set default_set
 	faction_creator kucha
 	building
@@ -47584,7 +47568,7 @@ settlement
 	region Keladun_R
 
 	year_founded 0
-	population 800
+	population 500
 	plan_set default_set
 	faction_creator kashgar
 	building
@@ -47602,7 +47586,7 @@ settlement
 	region Khotan_R
 
 	year_founded 0
-	population 1200
+	population 1100
 	plan_set default_set
 	faction_creator kashgar
 	building
