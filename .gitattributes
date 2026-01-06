@@ -1,4 +1,1 @@
 * text=auto
-
-# Binary mod assets
-*.psd filter=lfs diff=lfs merge=lfs -text
