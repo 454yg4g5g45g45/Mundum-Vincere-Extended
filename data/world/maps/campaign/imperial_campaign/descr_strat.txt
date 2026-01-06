@@ -39456,14 +39456,14 @@ relative 	Sabrakamani, 	Nawidemak,		Arakamani,		end
 
 ;	Maurya Empire
 faction	india, eastern_passive
-denari	-892000
+denari	-999000
 settlement
 {
 	level city
 	region Pataliputra_R
 
 	year_founded 0
-	population 5000
+	population 3000
 	plan_set default_set
 	faction_creator india
 	building
